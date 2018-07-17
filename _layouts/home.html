@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    {% include bootstrap4css.html %}
+
+    <!-- Bootstrap CSS -->
+    {% include bootstrap4css.html %}
+
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    {% include header.html %}
+    <div class="container">
+        {% for post in site.posts %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">
+                    <small class="text-muted">{{ post.date }}</small>
+                </p>
+                <p class="card-text">{{ post.excerpt }}</p>
+                <a href="{{ post.url }}" class="card-link">Read more</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    {% include bootstrap4js.html %}
+</body>
+
+</html>
