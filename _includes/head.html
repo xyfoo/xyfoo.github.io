@@ -1,0 +1,25 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {%- seo -%}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Inline CSS -->
+    <style>
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0 0.25em 0 0.25em;
+            /* Set the fixed height of the footer here */
+            /*height: 60px;
+            line-height: 60px;*/ /* Vertically center the text there */
+            background-color: #f5f5f5;
+        }
+    </style>
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+        {%- include google-analytics.html -%}
+    {%- endif -%}
+</head>

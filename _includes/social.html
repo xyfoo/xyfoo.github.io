@@ -1,0 +1,15 @@
+<nav class="nav">
+    {%- if site.dribbble_username -%}<a class="nav-link" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}">Dribble</a>{%- endif -%}
+    {%- if site.facebook_username -%}<a class="nav-link" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}">Facebook</a>{%- endif -%}
+    {%- if site.flickr_username -%}<a class="nav-link" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}">Flickr</a>{%- endif -%}
+    {%- if site.github_username -%}<a class="nav-link" href="https://github.com/{{ site.github_username| cgi_escape | escape }}">Github</a>{%- endif -%}
+    {%- if site.instagram_username -%}<a class="nav-link" href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}">Instagram</a>{%- endif -%}
+    {%- if site.linkedin_username -%}<a class="nav-link" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">LinkedIn</a>{%- endif -%}
+    {%- if site.pinterest_username -%}<a class="nav-link" href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}">Pinterest</a>{%- endif -%}
+    {%- for mst in site.mastodon -%}{%- if mst.username and mst.instance -%}<a class="nav-link" href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"> </a>{%- endif -%}{%- endfor -%}
+    {%- if site.twitter_username -%}<a class="nav-link" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}">Twitter</a>{%- endif -%}
+    {%- if site.youtube_username -%}<a class="nav-link" href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}">YouTube</a>{%- endif -%}
+    {%- if site.googleplus_username -%}<a class="nav-link" href="https://plus.google.com/{{ site.googleplus_username| escape }}">Google+</a>{%- endif -%}
+    {%- if site.rss -%}<a class="nav-link" href="{{ 'feed.xml' | relative_url }}">RSS</a>{%- endif -%}
+    <a class="nav-link" href="{{ "/feed.xml" | relative_url }}">RSS</a>
+</nav>
