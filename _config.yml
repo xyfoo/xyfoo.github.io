@@ -16,15 +16,15 @@
 title: Frankie's Blog
 email: frankie.foo@fluent-works.com
 description: >- # this means to ignore newlines until "baseurl:"
-  No good description found
+  Life as a developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://xyfoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+show_excerpts: true
 twitter_username: frankiefoo732
 github_username:  xyfoo
-rss: true
+google_analytics: UA-122621373-1
 disqus:
   shortname: frankie_blog
-show_excerpts: true
 
 # Build settings
 markdown: kramdown
