@@ -24,7 +24,7 @@ twitter_username: frankiefoo732
 github_username:  xyfoo
 google_analytics: UA-122621373-1
 disqus:
-  shortname: frankie_blog
+  shortname: frankie-blog
 
 # Build settings
 markdown: kramdown
