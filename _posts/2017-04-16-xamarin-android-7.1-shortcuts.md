@@ -6,7 +6,7 @@ tags: [Xamarin.Forms, Android, 'App Shortcut']
 ---
 Android introduced a new feature, [App Shortcut](https://developer.android.com/about/versions/nougat/android-7.1.html#shortcuts) in Android 7.1 (API level 25), and are available to any apps that target that API level.
 
-![Shortcuts in the messenger app]({{ "/assets/img/appshortcut.example.PNG" | absolute_url }}){:class="blogimg"}
+![Shortcuts in the messenger app]({{ "/assets/img/appshortcut.example.png" | absolute_url }}){:class="blogimg"}
 
 App shortcuts can be displayed by long press on the application icon, and touching on each item will start a series of actions defined by the application itself (like the context menu in desktop). Each of the app shortcuts can also be dragged and dropped as an independent icon at the home page, for easier access (like a desktop shortcut with command-line arguments)
 
