@@ -4,18 +4,19 @@
 {%- include head.html -%}
 
 <body>
-    {%- include header.html -%}
-
-    <div class="container-fluid" >
-        <main aria-label="Content">
-            {{ content }}
-        </main>
+    <div class="site-header">
+        <div>
+            <h1 class="display-4"><a href="/" style="color: #ffd567; text-decoration: none;">Some Clever Title</a></h1>
+            <h6 style="font-style: italic;">Frankie's musing and rants</h6>
+        </div>
+        <div style="margin-top: 3em;">
+            <h5><a href="/about" style="color: #FFF8E4;">about</a></h5>
+            <h5><a href="/posts" style="color: #FFF8E4;">posts</a></h5>
+        </div>
     </div>
-    
-
-    <!-- {%- include footer.html -%} -->
-    
+    <main aria-label='Content'>
+        {{ content }}
+    </main>
     {%- include script.html -%}
 </body>
-
 </html>
