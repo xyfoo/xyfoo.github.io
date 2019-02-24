@@ -1,51 +1,88 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo -%}
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://use.typekit.net/mbh2aut.css">
     <!-- Inline CSS -->
     <style>
+       
+
         body {
             font-family: 'merriweather';
             font-weight: 400;
             font-style: normal;
-            overflow-x: hidden;
+            flex-direction: row;
+            margin: 0px;
         }
 
         .site-header {
             background-color: #0D47A1;
             color: #ffd567;
-            padding: 2em 0.5em 1em 0.5em;
-            width: 20vw;
-            height: 100vh;
-            position: fixed;
+            padding: 1em;
+            min-width: 250px;
+        }
+
+        .site-title {
+            font-size: 3em;
+            text-decoration: none;
+            color: #ffd567;
+        }
+
+        .site-subtitle {
+            font-size: 1em;
+            margin: 0px;
+            font-style: italic;
+        }
+
+        .site-navs {
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .site-nav-link {
+            color: #FFF8E4;
+            margin-bottom: 1em;
+            text-decoration: none;
+            font-style: italic;
         }
 
         main {
-            position: relative;
-            padding: 2em;
-            left: 20vw;
-            width: 80vw;
+            padding: 1em 2em;
         }
 
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 0 0.25em 0 0.25em;
-            /* Set the fixed height of the footer here */
-            /*height: 60px;
-            line-height: 60px;*/ /* Vertically center the text there */
-            background-color: #f5f5f5;
+        .article-tag {
+            background-color: cornflowerblue;
+            margin-right: 0.25em;
+            padding: 0.25em 0.5em;
+            font-size: 0.75em;
+            color: white;
+            border-radius: 5px;
         }
-        div > .highlight {
+
+
+
+
+
+
+
+
+        
+
+        .page-nav-link {
+            font-size: 0.75em;
+        }
+
+        div>.highlight {
             background: #f7f7f7;
             padding: 0.5em;
             margin: 0 0 16px 0;
         }
+
         .blogimg {
             display: block;
             max-width: 100%;
@@ -53,9 +90,40 @@
             margin-right: auto;
         }
 
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+            }
+
+            .site-header {
+                min-height: unset;
+            }
+
+            .site-title {
+                font-size: 2em;
+            }
+
+            .site-subtitle {
+                font-size: 0.75em;
+            }
+
+            .site-navs {
+                margin-top: 1em;
+                flex-direction: row;
+            }
+
+            .site-nav-link {
+                margin-right: 1.5em;
+                font-size: 0.75em;
+            }
+
+            main {
+                padding: 1em 1em;
+            }
+        }
     </style>
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
-        {%- include google-analytics.html -%}
+    {%- include google-analytics.html -%}
     {%- endif -%}
 </head>

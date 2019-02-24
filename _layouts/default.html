@@ -3,15 +3,15 @@
 
 {%- include head.html -%}
 
-<body>
+<body style="display: flex">
     <div class="site-header">
         <div>
-            <h1 class="display-4"><a href="/" style="color: #ffd567; text-decoration: none;">Some Clever Title</a></h1>
-            <h6 style="font-style: italic;">Frankie's musing and rants</h6>
+            <a class="site-title" href="/">Some Clever Title</a>
+            <p class="site-subtitle">Frankie's musing and rants</h6>
         </div>
-        <div style="margin-top: 3em;">
-            <h5><a href="/about" style="color: #FFF8E4;">about</a></h5>
-            <h5><a href="/posts" style="color: #FFF8E4;">posts</a></h5>
+        <div class="site-navs">
+            <a href="/about" class="site-nav-link">about</a>
+            <a href="/posts" class="site-nav-link">posts</a>
         </div>
     </div>
     <main aria-label='Content'>
@@ -19,4 +19,5 @@
     </main>
     {%- include script.html -%}
 </body>
+
 </html>

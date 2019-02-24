@@ -11,46 +11,48 @@ comments: false
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-      <h1 itemprop="name headline">{{ post.title | escape }}</h1>
-      <p>
-        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {{ post.date | date: date_format }}
-        </time>
-        {%- if post.author -%}
-          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>
-        {%- endif -%}</p>
-        
+        <h1 itemprop="name headline">{{ post.title | escape }}</h1>
+        <p>
+            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ post.date | date: date_format }}
+            </time>
+            {%- if post.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">{{ post.author }}</span></span>
+            {%- endif -%}
+        </p>
+        <div style="display: flex;">
+            {% for tag in post.tags %}
+            <div class="article-tag">{{ tag }}</div>
+            {% endfor %}
+        </div>
     </header>
-    <div>
-        {% for tag in post.tags %}
-        <p style="display: inline"><span class="badge badge-secondary">{{ tag }}</span></p>
-        {% endfor %}
-    </div>
+    
     <div itemprop="articleBody">
-      {{ post.content }}
+        {{ post.content }}
     </div>
 
     <hr />
     <div style="display: flex; justify-content: space-between">
         {% if post.previous.url %}
         <div>
-            <a class="prev" href="{{post.previous.url}}">Previous article</a>
-            <p style="font-size: 0.75em">{{post.previous.title}}</p>
+            <a href="{{post.previous.url}}">Previous article</a>
+            <p class="page-nav-link">{{post.previous.title}}</p>
         </div>
         {% endif %}
         {% if post.next.url %}
         <div>
-            <a class="next" href="{{post.next.url}}">Next article</a>
-            <p style="font-size: 0.75em">{{post.next.title}}</p>
+            <a href="{{post.next.url}}">Next article</a>
+            <p class="page-nav-link">{{post.next.title}}</p>
         </div>
         {% endif %}
     </div>
     <hr />
 
     {%- if site.disqus.shortname -%}
-      {%- include disqus_comments.html -%}
+    {%- include disqus_comments.html -%}
     {%- endif -%}
-  
+
     <a href="{{ post.url | relative_url }}" hidden></a>
 </article>

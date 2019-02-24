@@ -17,9 +17,9 @@ comments: true
             {%- endif -%}</p>
 
     </header>
-    <div>
+    <div style="display: flex;">
         {% for tag in page.tags %}
-        <p style="display: inline"><span class="badge badge-secondary">{{ tag }}</span></p>
+        <p class="article-tag">{{ tag }}</p>
         {% endfor %}
     </div>
     <div itemprop="articleBody">
@@ -30,14 +30,14 @@ comments: true
     <div style="display: flex; justify-content: space-between">
         {% if page.previous.url %}
         <div>
-            <a class="prev" href="{{page.previous.url}}">Previous article</a>
-            <p style="font-size: 0.75em">{{page.previous.title}}</p>
+            <a href="{{page.previous.url}}">Previous article</a>
+            <p class="page-nav-link">{{page.previous.title}}</p>
         </div>
         {% endif %}
         {% if page.next.url %}
         <div>
-            <a class="next" href="{{page.next.url}}">Next article</a>
-            <p style="font-size: 0.75em">{{page.next.title}}</p>
+            <a href="{{page.next.url}}">Next article</a>
+            <p class="page-nav-link">{{page.next.title}}</p>
         </div>
         {% endif %}
     </div>
