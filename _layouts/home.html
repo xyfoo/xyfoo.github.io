@@ -11,24 +11,21 @@ comments: false
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <h1 itemprop="name headline">{{ post.title | escape }}</h1>
-        <p>
-            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {{ post.date | date: date_format }}
-            </time>
-            {%- if post.author -%}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                    itemprop="name">{{ post.author }}</span></span>
-            {%- endif -%}
-        </p>
-        <div style="display: flex;">
-            {% for tag in post.tags %}
-            <div class="article-tag">{{ tag }}</div>
-            {% endfor %}
-        </div>
+        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ post.date | date: date_format }}
+        </time>
+        <h1 itemprop="name headline" style="margin-top: 0.25em">{{ post.title | escape }}</h1>
+        {%- if post.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                itemprop="name">{{ post.author }}</span></span>
+        {%- endif -%}
     </header>
-    
+    <div style="display: flex;">
+        {% for tag in post.tags %}
+        <div class="article-tag">{{ tag }}</div>
+        {% endfor %}
+    </div>
     <div itemprop="articleBody">
         {{ post.content }}
     </div>
@@ -37,14 +34,14 @@ comments: false
     <div style="display: flex; justify-content: space-between">
         {% if post.previous.url %}
         <div>
-            <a href="{{post.previous.url}}">Previous article</a>
-            <p class="page-nav-link">{{post.previous.title}}</p>
+            <a class="article-nav-link" href="{{post.previous.url}}">Previous article</a>
+            <div class="article-nav-title">{{post.previous.title}}</div>
         </div>
         {% endif %}
         {% if post.next.url %}
         <div>
-            <a href="{{post.next.url}}">Next article</a>
-            <p class="page-nav-link">{{post.next.title}}</p>
+            <a class="article-nav-link" href="{{post.next.url}}">Next article</a>
+            <div class="article-nav-title">{{post.next.title}}</div>
         </div>
         {% endif %}
     </div>

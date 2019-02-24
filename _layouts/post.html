@@ -5,39 +5,36 @@ comments: true
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-        <p>
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                {{ page.date | date: date_format }}
-            </time>
-            {%- if page.author -%}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                    itemprop="name">{{ page.author }}</span></span>
-            {%- endif -%}</p>
-
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ page.date | date: date_format }}
+        </time>
+        <h1 itemprop="name headline" style="margin-top: 0.25em">{{ page.title | escape }}</h1>
+        {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}
     </header>
     <div style="display: flex;">
         {% for tag in page.tags %}
-        <p class="article-tag">{{ tag }}</p>
+        <div class="article-tag">{{ tag }}</div>
         {% endfor %}
     </div>
     <div itemprop="articleBody">
         {{ content }}
     </div>
-
     <hr />
     <div style="display: flex; justify-content: space-between">
         {% if page.previous.url %}
         <div>
-            <a href="{{page.previous.url}}">Previous article</a>
-            <p class="page-nav-link">{{page.previous.title}}</p>
+            <a class="article-nav-link" href="{{page.previous.url}}">Previous article</a>
+            <div class="article-nav-title">{{page.previous.title}}</div>
         </div>
         {% endif %}
         {% if page.next.url %}
         <div>
-            <a href="{{page.next.url}}">Next article</a>
-            <p class="page-nav-link">{{page.next.title}}</p>
+            <a class="article-nav-link" href="{{page.next.url}}">Next article</a>
+            <div class="article-nav-title">{{page.next.title}}</div>
         </div>
         {% endif %}
     </div>
