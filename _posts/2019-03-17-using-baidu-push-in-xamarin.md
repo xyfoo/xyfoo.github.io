@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Use Baidu Push Service in Xamarin.Android"
-date:   2018-11-30 00:00:00 +0800
+date:   2019-03-17 00:00:00 +0800
 tags:   ['Xamarin.Android', 'Baidu Push', 'Push Notification']
 ---
 
