@@ -2,7 +2,7 @@
 layout: post
 title:  "Xamarin.Forms How to: Perform automated UI test"
 date:   2018-11-30 00:00:00 +0800
-tags:   [Xamarin.Forms, 'UI Test', 'Xamarin Test Cloud']
+tags:   ['Xamarin', 'Xamarin.Forms', 'UI Test', 'Xamarin Test Cloud']
 ---
 If your application has a broad reach of users, it’s likely you will face one of this:
 

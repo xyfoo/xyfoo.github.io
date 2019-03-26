@@ -2,7 +2,7 @@
 layout: post
 title:  "Xamarin.Forms How to: Display Android’s Toast & SnackBar in PCL project"
 date:   2016-07-10 00:00:00 +0800
-tags: [Xamarin.Forms, Android, Toast, SnackBar]
+tags: ['Xamarin', 'Xamarin.Forms', 'Android', 'Toast', 'SnackBar']
 ---
 Below is some code to help you to display [Toast & SnackBar](https://material.google.com/components/snackbars-toasts.html) pop up ONLY in your Xamarin.Forms Android project and calling the pop-up in PCL code.
 

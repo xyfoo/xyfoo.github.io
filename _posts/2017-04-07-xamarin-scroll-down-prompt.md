@@ -2,7 +2,7 @@
 layout: post
 title:  "Xamarin.Forms How to: Add a scroll down prompt to ScrollView"
 date:   2017-04-07 00:00:00 +0800
-tags: [Xamarin.Forms, ScrollView]
+tags: ['Xamarin', 'Xamarin.Forms', 'ScrollView']
 ---
 There’s a request from a customer to have a scroll down prompt when the content is too tall to be displayed in a single screen height. Pretty much like what you normally see in a lot of website:
 

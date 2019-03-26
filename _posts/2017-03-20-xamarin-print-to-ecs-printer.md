@@ -2,7 +2,7 @@
 layout: post
 title:  "Xamarin.Forms How To: Print receipts to ECS/POS printers"
 date:   2017-03-20 00:00:00 +0800
-tags: [Xamarin.Forms, ECS/POS]
+tags: ['Xamarin', 'Xamarin.Forms', 'ECS/POS']
 ---
 It’s quite a common scene for mobile devices (iPad/Android tablet/Surface) to functions as the Point-of-Sales (POS) machine, typically couples with a POS printer to provide receipts or tax invoice.
 

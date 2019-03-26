@@ -2,7 +2,7 @@
 layout: post
 title:  "Xamarin.Forms How to: Integrate Android 7.1 App Shortcuts"
 date:   2017-04-16 00:00:00 +0800
-tags: [Xamarin.Forms, Android, 'App Shortcut']
+tags: ['Xamarin', 'Xamarin.Forms', 'Android', 'App Shortcut']
 ---
 Android introduced a new feature, [App Shortcut](https://developer.android.com/about/versions/nougat/android-7.1.html#shortcuts) in Android 7.1 (API level 25), and are available to any apps that target that API level.
 
