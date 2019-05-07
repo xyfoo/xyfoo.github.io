@@ -4,6 +4,56 @@ comments: true
 ---
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
+    <div style="background-color: white; padding: 2rem;">
+        <!-- Post title -->
+        <header>
+            <h1 class="text-center" itemprop="name headline">{{ page.title | escape }}</h1>
+            {%- if page.author -%}
+            <div class="text-center" itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">{{ page.author }}</span></div>
+            {%- endif -%}
+            <div class="text-center" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+            </div>
+        </header>
+        <!-- Post content -->
+        <div itemprop="articleBody">
+            {{ page.content }}
+        </div>
+    </div>
+    <!-- Post tags -->
+    <div style="display: flex; margin-top: 2rem; padding: 0rem 2rem; flex-wrap: wrap">
+        <div class="article-tag">Tagged: </div>
+        {% for tag in page.tags %}
+        <div class="article-tag">{{ tag }}</div>
+        {% endfor %}
+    </div>
+    <!-- Other posts -->
+    <div style="display: flex; justify-content: space-between; margin-top: 2rem; padding: 0rem 2rem;">
+        {% if page.previous.url %}
+        <div>
+            <a class="article-nav-link" href="{{page.previous.url}}">Previous article</a>
+            <div class="article-nav-title">{{page.previous.title}}</div>
+        </div>
+        {% endif %}
+        {% if page.next.url %}
+        <div>
+            <a class="article-nav-link" href="{{page.next.url}}">Next article</a>
+            <div class="article-nav-title">{{page.next.title}}</div>
+        </div>
+        {% endif %}
+    </div>
+    <!-- Disqus -->
+    <div style="background-color: white; margin-top: 2rem;">
+        {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+        {%- endif -%}
+    </div>
+    <a href=" {{ page.url | relative_url }}" hidden></a>
+</article>
+<!--
+<article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -46,3 +96,4 @@ comments: true
 
     <a href="{{ page.url | relative_url }}" hidden></a>
 </article>
+-->

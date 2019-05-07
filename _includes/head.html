@@ -4,12 +4,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo -%}
     {% feed_meta %}
-    <link rel="stylesheet" href="https://use.typekit.net/mbh2aut.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- Inline CSS -->
     <style>
-       
+        body {
+            font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, Arial, Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1.0625rem;
+            line-height: 1.5;
+            background-color: #f4f4f4;
+        }
 
+        main {
+            padding: 2rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        code {
+            background-color: rgba(27, 31, 35, .05);
+            padding: 0.2em 0.4em;
+            border-bottom: 1px solid #0D47A1;
+            line-height: 1.5;
+            font-size: 1.1em;
+        }
+
+        blockquote {
+            border-left: 0.5rem solid #0D47A1;
+            padding-left: 1rem;
+            font-style: italic;
+            margin-inline-start: unset;
+            margin-inline-end: unset;
+            margin-block-start: unset;
+            margin-block-end: unset;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f6f8fa;
+        }
+
+        th,
+        td {
+            border: 1px solid #dfe2e5;
+            padding: 0.25rem 0.5rem;
+        }
+
+        div>.highlight {
+            background: #f7f7f7;
+            padding: 0.5em;
+            margin: 0 0 16px 0;
+        }
+
+        .blogimg {
+            display: block;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .article-tag {
+            margin-right: 0.75rem;
+        }
+    </style>
+    <!-- <style>
         body {
             font-family: 'merriweather';
             font-weight: 400;
@@ -41,7 +106,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .site-nav-link {
             color: #FFF8E4;
             margin-bottom: 1em;
@@ -60,7 +125,7 @@
             font-size: 0.75em;
             color: white;
             border-radius: 5px;
-            
+
         }
 
         .article-nav-title {
@@ -68,7 +133,7 @@
         }
 
         code {
-            background-color: rgba(27,31,35,.05);
+            background-color: rgba(27, 31, 35, .05);
             padding: 0.2em 0.4em;
             border-bottom: 1px solid #0D47A1;
             line-height: 1.5;
@@ -93,7 +158,8 @@
             background-color: #f6f8fa;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #dfe2e5;
             padding: 0.25rem 0.5rem;
         }
@@ -155,7 +221,7 @@
                 display: none;
             }
         }
-    </style>
+    </style> -->
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}

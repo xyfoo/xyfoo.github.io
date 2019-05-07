@@ -3,35 +3,48 @@
 
 {%- include head.html -%}
 
-<body style="display: flex">
-    <div class="site-header">
-        <div>
-            <a class="site-title" href="/">Some Clever Title</a>
-            <p class="site-subtitle">Frankie's musing and rants</h6>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <a class="navbar-brand" href="/">Frankie Foo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/about-me">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/posts">Posts</a>
+                </li>
+                <!--
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                -->
+            </ul>
         </div>
-        <div style="margin-top: 1rem;">
-            <a class="site-nav-link" href="https://www.linkedin.com/in/frankiefoo/" target="_blank" style="margin-right: 0.5rem;">
-                <i class="fab fa-linkedin fa-1x"></i>
-            </a>
-            <a class="site-nav-link" href="https://www.github.com/xyfoo" target="_blank" style="margin-right: 0.5rem;">
-                <i class="fab fa-github fa-1x"></i>
-            </a>
-            <a class="site-nav-link" href="https://www.twitter.com/frankiefoo732" target="_blank" style="margin-right: 0.5rem;">
-                <i class="fab fa-twitter fa-1x"></i>
-            </a>
-            <a class="site-nav-link" href="/feed.xml" target="_blank" style="margin-right: 0.5rem;">
-                <i class="fas fa-rss fa-1x"></i>
-            </a>
-        </div>
-        <div class="site-navs">
-            <!-- <a href="/about" class="site-nav-link">about</a> -->
-            <a href="/posts" class="site-nav-link">posts</a>
-        </div>
-    </div>
-    <main aria-label='Content'>
+    </nav>
+    <main aria-label='Content' class="container-fluid">
         {{ content }}
     </main>
-    {%- include sitescript.html -%}
 </body>
+
+{%- include sitescript.html -%}
 
 </html>
