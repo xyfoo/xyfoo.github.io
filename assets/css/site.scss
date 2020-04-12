@@ -2,7 +2,6 @@
 ---
 
 /*
-
 Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=0f4c82&secondary.color=FFFFFF
 */
 
@@ -10,6 +9,7 @@ $primary-color: #0d4a82;
 $primary-text-color: #FFFFFF;
 $primary-light-color: #4b75b2;
 $primary-dark-color: #002355;
+$alt-text-color: #000000;
 
 body {
     font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, Arial, Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -71,15 +71,29 @@ div>.highlight {
     margin-right: auto;
 }
 
-.article-tag {
-    margin-right: 0.75rem;
-}
-
 .default-layout {
     /* Shared layout */
     display: flex;
     flex-direction: row;
     max-height: 100vh;
+}
+
+article {
+    .tags {
+        display: flex;
+        margin-top: 2rem;
+        padding: 0rem 2rem;
+        flex-wrap: wrap
+    }
+
+    .article-tag {
+        margin-right: 0.75rem;
+        padding: 0.2rem 0.5rem;
+        background-color: $primary-dark-color;
+        color: $primary-text-color;
+        border-radius: 5px;
+        font-size: 0.8rem;
+    }
 }
 
 .sidebar {
@@ -89,11 +103,15 @@ div>.highlight {
     color: $primary-text-color;
     display: flex;
     flex-direction: column;
-    
+    height: 100vh;
+
 
     .title {
+        display: block;
         padding: 1rem 0;
         font-size: 2rem;
+        text-decoration: none;
+        color: $primary-text-color;
     }
 
     .nav-link {
@@ -104,6 +122,12 @@ div>.highlight {
         font-size: 1.2rem;
         opacity: 0.7;
         padding-bottom: 0.5rem;
+    }
+
+    .icon-link {
+        display: inline;
+        margin-right: 0.5rem;
+        padding: 0;
     }
 
     img.avatar {
@@ -119,6 +143,44 @@ main {
     overflow: scroll;
 }
 
+#sysk {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: $alt-text-color;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+            width: 30ch;
+
+            .icon {
+                width: 5rem;
+                height: 5rem;
+                margin-right: 1rem;
+            }
+
+            .title {
+                display: inline;
+                font-size: 1.5rem;
+                font-weight: 700;
+                word-wrap: break-word;
+            }
+        }
+
+        .card:hover {
+            text-decoration: none;
+            background-color: $primary-dark-color;
+            color: $primary-text-color;
+        }
+    }
+
+}
+
 @media (max-width: 720px) {
     .default-layout {
         flex-direction: column;
@@ -127,6 +189,14 @@ main {
 
     .sidebar {
         align-items: center;
+        height: unset;
+    }
+
+    #sysk {
+        .cards {
+            .card {
+                width: 100%;
+            }
+        }
     }
 }
-

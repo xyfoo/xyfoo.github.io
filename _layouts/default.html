@@ -7,9 +7,22 @@
     <div class="default-layout">
         <nav class="sidebar">
             <img class="avatar" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
-            <div class="title">Frankie Foo's Blog</div>
-            <a class="nav-link" href="/about-me">About</a>
+            <a class="title" href="/">Frankie Foo's Blog</a>
             <a class="nav-link" href="/archives">Archives</a>
+            <a class="nav-link" href="/reading-list">Reading List</a>
+            <div style="padding: 1rem 0;">
+                <a class="nav-link icon-link" href="https://www.linkedin.com/in/frankiefoo/" target="_blank">
+                    <i class="fab fa-linkedin fa-1x"></i>
+                </a>
+                <a class="nav-link icon-link" href="https://www.github.com/xyfoo" target="_blank">
+                    <i class="fab fa-github fa-1x"></i>
+                </a>
+                <a class="nav-link icon-link" href="https://www.twitter.com/frankiefoo732" target="_blank">
+                    <i class="fab fa-twitter fa-1x"></i>
+                </a>
+                <a class="nav-link icon-link" href="/feed.xml" target="_blank">
+                    <i class="fas fa-rss fa-1x"></i>
+                </a>
         </nav>
         <main aria-label='Content' class="container-fluid">
             {{ content }}
