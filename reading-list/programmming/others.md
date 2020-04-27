@@ -4,12 +4,6 @@ title:  "Reading List - Others"
 ---
 
 ## 2020
-
-### April
-- 11
-  - [Mostly adequate guide to Functional Programming (in javascript)](https://github.com/MostlyAdequate/mostly-adequate-guide)
-- 1
-  - [You don't know JS (1st edition) - A book series on JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)
   
 ## 2019
   
