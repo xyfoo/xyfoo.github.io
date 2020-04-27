@@ -6,12 +6,19 @@ title:  "Reading List - Web Dev"
 ## 2020
 
 ### April
+- 27
+  - [Eloquent JavaScript](https://eloquentjavascript.net/)
+  - [Intro to Vue.JS - Animation](https://css-tricks.com/intro-to-vue-5-animations/)
 - 25
   - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- 11
+  - [Mostly adequate guide to Functional Programming (in javascript)](https://github.com/MostlyAdequate/mostly-adequate-guide)
 - 04
   - [Mastering developer tools console in web browsers](https://blog.teamtreehouse.com/mastering-developer-tools-console)
 - 03
   - [CSS length units](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
+- 01
+  - [You don't know JS (1st edition) - A book series on JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)
   
 ### March
 - 24
