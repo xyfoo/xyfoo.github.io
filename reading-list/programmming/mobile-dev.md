@@ -5,6 +5,10 @@ title:  "Reading List - Mobile Dev"
 
 ## 2020
 
+### May
+- 01
+  - [Andriod - Show biometric authentication dialog](https://developer.android.com/training/sign-in/biometric-auth)
+  
 ### January
 - 02
   - [Xamarin.Forms Reusable Controls](https://redpillxamarin.com/2017/01/28/206-reusable-controls/)
