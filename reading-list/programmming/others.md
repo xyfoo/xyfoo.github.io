@@ -13,6 +13,10 @@ title:  "Reading List - Others"
 - 1
   - [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming)
   
+### April
+- 19
+  - [It's Not Just Standing Up: Patterns for Daily Standup Meetings](https://martinfowler.com/articles/itsNotJustStandingUp.html)
+  
 ## 2019
   
 ### November
