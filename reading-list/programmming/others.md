@@ -6,6 +6,8 @@ title:  "Reading List - Others"
 ## 2020
 
 ### May
+- 9
+  - [What is Design Systems](https://dev.to/emmabostian/design-systems-part-i-foundations-45hd)
 - 7
   - [The LMAX Architecture](https://martinfowler.com/articles/lmax.html)
   - [GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler](https://www.youtube.com/watch?v=STKCRSUsyP0)
