@@ -6,6 +6,10 @@ title:  "Reading List - Others"
 ## 2020
 
 ### May
+- 7
+  - [The LMAX Architecture](https://martinfowler.com/articles/lmax.html)
+  - [GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler](https://www.youtube.com/watch?v=STKCRSUsyP0)
+  - [Avoiding Microservice Megadisaster - Jimmy Bogard](https://www.youtube.com/watch?v=gfh-VCTwMw8)
 - 1
   - [Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming)
   
