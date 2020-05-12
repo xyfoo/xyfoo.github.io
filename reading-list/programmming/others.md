@@ -6,6 +6,8 @@ title:  "Reading List - Others"
 ## 2020
 
 ### May
+- 12
+  - [List of free resources for developers](https://free-for.dev/)
 - 9
   - [What is Design Systems](https://dev.to/emmabostian/design-systems-part-i-foundations-45hd)
 - 7
