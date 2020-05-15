@@ -5,6 +5,10 @@ title:  "Reading List - Web Dev"
 
 ## 2020
 
+### May
+- 15
+  -[Making the Move from jQuery to Vue](https://css-tricks.com/making-the-move-from-jquery-to-vue/)
+  
 ### April
 - 27
   - [Eloquent JavaScript](https://eloquentjavascript.net/)
