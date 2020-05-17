@@ -7,6 +7,7 @@ title:  "Reading List - .NET Dev"
 
 ### May
 - 17
+  - [Building a Secure ASP.NET Core Web API with Azure AD B2C](http://www.techbubbles.com/aspnet/building-a-secure-asp-net-core-web-api/)
   - [Microsoft Security Authentication Library (MSAL.NET) - Scenario](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios)
 
 ### February
