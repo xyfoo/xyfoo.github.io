@@ -5,6 +5,10 @@ title:  "Reading List - .NET Dev"
 
 ## 2020
 
+### May
+- 17
+  - [Microsoft Security Authentication Library (MSAL.NET) - Scenario](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios)
+
 ### February
 - 26
   - [ASP.NET MVC bundling & minification](https://docs.microsoft.com/en-us/aspnet/mvc/overview/performance/bundling-and-minification)
