@@ -5,9 +5,21 @@ title:  "Reading List - Web Dev"
 
 ## 2020
 
+### June
+- 04
+  - [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+  - [Working with the History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API)
+- 01
+  - [WindowEventHandlers.onbeforeunload](https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload)
+  - [Window: popstate event](https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event)
+  
 ### May
+- 29
+  - [Element.scrollHeight](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight)
+  - [CSS clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
+  
 - 15
-  -[Making the Move from jQuery to Vue](https://css-tricks.com/making-the-move-from-jquery-to-vue/)
+  - [Making the Move from jQuery to Vue](https://css-tricks.com/making-the-move-from-jquery-to-vue/)
   
 ### April
 - 27
