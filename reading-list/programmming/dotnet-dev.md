@@ -5,6 +5,10 @@ title:  "Reading List - .NET Dev"
 
 ## 2020
 
+### June
+- 05
+  - [Dependency injection into views in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection)
+  
 ### May
 - 17
   - [Building a Secure ASP.NET Core Web API with Azure AD B2C](http://www.techbubbles.com/aspnet/building-a-secure-asp-net-core-web-api/)
