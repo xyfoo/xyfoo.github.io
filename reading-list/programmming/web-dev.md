@@ -6,6 +6,8 @@ title:  "Reading List - Web Dev"
 ## 2020
 
 ### June
+- 05
+  - [Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
 - 04
   - [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
   - [Working with the History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API)
