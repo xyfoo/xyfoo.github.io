@@ -6,6 +6,8 @@ title:  "Reading List - Web Dev"
 ## 2020
 
 ### June
+- 11
+  - [Webpack - Guides - Getting Started](https://webpack.js.org/guides/getting-started/)
 - 05
   - [Creating and triggering events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events)
 - 04
