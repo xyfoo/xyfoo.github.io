@@ -5,6 +5,10 @@ title:  "Reading List - Web Dev"
 
 ## 2020
 
+### July
+- 30
+  - [Modern JavaScript Explained For Dinosaurs](https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70)
+  
 ### June
 - 11
   - [Webpack - Guides - Getting Started](https://webpack.js.org/guides/getting-started/)
