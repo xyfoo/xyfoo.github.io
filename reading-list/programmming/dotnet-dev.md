@@ -5,6 +5,10 @@ title:  "Reading List - .NET Dev"
 
 ## 2020
 
+### Nov
+- 01
+  - [Dotnet Runtime Coding Style](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/coding-style.md)
+  
 ### June
 - 05
   - [Dependency injection into views in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection)
