@@ -6,6 +6,8 @@ title:  "Reading List - .NET Dev"
 ## 2020
 
 ### Nov
+- 05
+  - [.NET Core source explorer](https://source.dot.net/)
 - 01
   - [Dotnet Runtime Coding Style](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/coding-style.md)
   
