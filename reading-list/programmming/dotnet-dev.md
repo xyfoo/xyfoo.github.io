@@ -5,6 +5,9 @@ title:  "Reading List - .NET Dev"
 
 ## 2020
 
+### Dec
+- 16
+  - [Customize your .NET build - Sharing properties across project](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets )
 ### Nov
 - 05
   - [.NET Core source explorer](https://source.dot.net/)
