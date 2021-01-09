@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: false
 ---
 
 {%- if post.title -%}
@@ -9,52 +8,51 @@ comments: false
 
 {% assign post = site.posts.first %}
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
-    <div style="background-color: white; padding: 2rem;">
-        <!-- Post title -->
-        <header>
-            <h1 class="text-center" itemprop="name headline">{{ post.title | escape }}</h1>
+<article class="bg-white" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <!-- Post title -->
+    <header class="mb-4">
+        <h1 itemprop="name headline">{{ post.title | escape }}</h1>
+        <div class="flex">
             {%- if post.author -%}
-            <div class="text-center" itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+            <div class="text-sm italic mr-4" itemprop="author" itemscope itemtype="http://schema.org/Person"><span
                     itemprop="name">{{ post.author }}</span></div>
             {%- endif -%}
-            <div class="text-center" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+            <div class="text-sm italic" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                 {{ post.date | date: date_format }}
             </div>
-        </header>
-        <!-- Post content -->
-        <div itemprop="articleBody">
-            {{ post.content }}
         </div>
-    </div>
+    </header>
+
     <!-- Post tags -->
-    <div class="tags">
+    <div class="flex my-4">
         {% for tag in post.tags %}
-        <div class="article-tag">{{ tag }}</div>
+        <div class="text-xs bg-blue-200 text-black rounded mr-1 px-2 py-1">{{ tag }}</div>
         {% endfor %}
     </div>
 
-    <!-- Other posts -->
-    <div style="display: flex; justify-content: space-between; margin-top: 2rem; padding: 0rem 2rem;">
-        {% if post.previous.url %}
-        <div>
-            <a class="article-nav-link" href="{{post.previous.url}}">Previous article</a>
-            <div class="article-nav-title">{{post.previous.title}}</div>
-        </div>
-        {% endif %}
-        {% if post.next.url %}
-        <div>
-            <a class="article-nav-link" href="{{post.next.url}}">Next article</a>
-            <div class="article-nav-title">{{post.next.title}}</div>
-        </div>
-        {% endif %}
+     <!-- Post content -->
+     <div class="content-body">
+        {{ post.content }}
     </div>
-    <!-- Disqus -->
-    <div style="background-color: white; margin-top: 2rem;">
-        {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
-        {%- endif -%}
+    
+
+    <!-- Other posts -->
+    <div class="mt-8 flex">
+        {% if post.previous.url %}
+        <div class="w-60">
+            <a class="text-xs" href="{{post.previous.url}}">Previous article</a>
+            <div class="text-sm">{{post.previous.title}}</div>
+        </div>
+        {% endif %}
+        <div class="flex-grow" />
+        {% if post.next.url %}
+        <div class="w-60">
+            <a class="text-xs" href="{{post.next.url}}">Next article</a>
+            <div class="text-sm">{{post.next.title}}</div>
+        </div>
+        {% endif %}
     </div>
     <a href=" {{ post.url | relative_url }}" hidden></a>
 </article>

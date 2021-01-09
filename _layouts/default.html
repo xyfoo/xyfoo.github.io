@@ -4,27 +4,27 @@
 {%- include head.html -%}
 
 <body>
-    <div class="default-layout">
-        <nav class="sidebar">
-            <img class="avatar" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
-            <a class="title" href="/">Frankie Foo's Blog</a>
-            <a class="nav-link" href="/archives">Archives</a>
-            <a class="nav-link" href="/reading-list">Reading List</a>
-            <div style="padding: 1rem 0;">
-                <a class="nav-link icon-link" href="https://www.linkedin.com/in/frankiefoo/" target="_blank">
+    <div class="flex flex-row flex-none bg-white">
+        <nav class="flex flex-col p-8 bg-blue-900 text-white w-72 h-screen flex-none">
+            <img class="h-56 w-56 rounded-full border-4 border-white" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
+            <a class="text-3xl mt-4 mb-4" href="/">Frankie Foo's Blog</a>
+            <a class="text-lg" href="/archives">Archives</a>
+            <a class="text-lg" href="/reading-list">Reading List</a>
+            <div class="mt-4">
+                <a class="text-xl mr-1" href="https://www.linkedin.com/in/frankiefoo/" target="_blank">
                     <i class="fab fa-linkedin fa-1x"></i>
                 </a>
-                <a class="nav-link icon-link" href="https://www.github.com/xyfoo" target="_blank">
+                <a class="text-xl mr-1" href="https://www.github.com/xyfoo" target="_blank">
                     <i class="fab fa-github fa-1x"></i>
                 </a>
-                <a class="nav-link icon-link" href="https://www.twitter.com/frankiefoo732" target="_blank">
+                <a class="text-xl mr-1" href="https://www.twitter.com/frankiefoo732" target="_blank">
                     <i class="fab fa-twitter fa-1x"></i>
                 </a>
-                <a class="nav-link icon-link" href="/feed.xml" target="_blank">
+                <a class="text-xl" href="/feed.xml" target="_blank">
                     <i class="fas fa-rss fa-1x"></i>
                 </a>
         </nav>
-        <main aria-label='Content' class="container-fluid">
+        <main aria-label='Content' class="h-screen overflow-y-auto flex-auto p-8">
             {{ content }}
         </main>
     </div>
