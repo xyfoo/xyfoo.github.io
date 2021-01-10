@@ -5,13 +5,13 @@
 {%- include head.html -%}
 
 <body>
-    <div class="flex flex-row flex-none bg-white">
-        <nav class="flex flex-col p-8 bg-blue-900 text-white w-72 h-screen flex-none">
-            <img class="h-56 w-56 rounded-full border-4 border-white" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
-            <a class="text-3xl mt-4 mb-4" href="/">Frankie Foo's Blog</a>
-            <a class="text-lg" href="/archives">Archives</a>
-            <a class="text-lg" href="/reading-list">Reading List</a>
-            <div class="mt-4">
+    <div class="flex flex-col lg:flex-row flex-none bg-white">
+        <nav class="flex p-8 bg-blue-900 text-white flex-col w-screen flex-none lg:w-72 lg:h-screen">
+            <img class="h-28 w-28 rounded-full border-2 border-white ml-auto mr-auto lg:h-56 lg:w-56 lg:border-4 lg:ml-0 lg:mr-0" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
+            <a class="text-3xl mt-4 mb-4 text-center lg:text-left" href="/">Frankie Foo's Blog</a>
+            <a class="text-lg text-center lg:text-left" href="/archives">Archives</a>
+            <a class="text-lg text-center lg:text-left" href="/reading-list">Reading List</a>
+            <div class="mt-4 ml-auto mr-auto lg:ml-0 lg:mr-0">
                 <a class="text-xl mr-1" href="https://www.linkedin.com/in/frankiefoo/" target="_blank">
                     <i class="fab fa-linkedin fa-1x"></i>
                 </a>
@@ -25,7 +25,7 @@
                     <i class="fas fa-rss fa-1x"></i>
                 </a>
         </nav>
-        <main aria-label='Content' class="h-screen overflow-y-auto flex-auto p-8">
+        <main aria-label='Content' class="flex-auto p-8 overflow-y-auto lg:h-screen dark:bg-black dark:text-white">
             {{ content }}
         </main>
     </div>

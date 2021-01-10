@@ -1,22 +1,47 @@
 ---
 ---
 
-/*
-Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=0f4c82&secondary.color=FFFFFF
-*/
+// @media (prefers-color-scheme: dark) {
+//   .markdown {
+//     background-color: black;
+//     color: white;
 
-// $primary-color: #0d4a82;
-// $primary-text-color: #FFFFFF;
-// $primary-light-color: #4b75b2;
-// $primary-dark-color: #002355;
-// $alt-text-color: #000000;
+//     a {
+//       /* tailwind text-blue-400 */
+//       color: rgba(96, 165, 250, 1);
+//     }
 
-// body {
-//     font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, Arial, Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-//     font-size: 1.0625rem;
-//     line-height: 1.5;
-//     background-color: #f4f4f4;
+//     blockquote {
+//       /* tailwind bg-gray-700 */
+//       background-color: rgba(55, 65, 81, 1);
+//     }
+
+//     code {
+//       /* tailwind bg-gray-700 */
+//       background-color: rgba(55, 65, 81, 1);
+//     }
+
+//     hr {
+//       /* tailwind bg-gray-100 my-4 */
+//       background-color: rgba(243, 244, 246, 1);
+//     }
+
+//     table {
+//       /* tailwind */
+
+//       thead {
+//         background-color: transparent;
+//         color: white;
+//       }
+
+//       tr:nth-child(even) {
+//         background-color: transparent;
+//       }
+//     }
+//   }
 // }
+
+/* Default theme */
 
 .markdown {
   /* tailwind text-base */
