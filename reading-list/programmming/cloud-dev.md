@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mdpage
 title:  "Reading List - Cloud Dev"
 ---
 

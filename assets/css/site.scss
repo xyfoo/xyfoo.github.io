@@ -18,197 +18,142 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
 //     background-color: #f4f4f4;
 // }
 
-.content-body h2 {
-    color: red;
+.markdown {
+  /* tailwind text-base */
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  h1 {
+    /* tailwind text-3xl mt-5 mb-3*/
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    /* tailwind text-2xl mt-4 mb-2 */
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    /* tailwind text-xl mt-3 mb-2*/
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h4 {
+    /* tailwind text-lg mt-2 mb-2*/
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  blockquote {
+    /* tailwind italic my-2 bg-gray-100 py-2*/
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: rgba(243, 244, 246, 1);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    border-left: 0.5rem solid rgba(59, 130, 246, 1);
+    padding-left: 1rem;
+  }
+
+  code {
+    /* tailwind bg-gray-100 py-2 px-1*/
+    background-color: rgba(243, 244, 246, 1);
+    padding: 0.25rem 0.5rem;
+    border-bottom: 1px solid rgba(59, 130, 246, 1);
+  }
+
+  a {
+    /* tailwind text-blue-700 */
+    color: rgba(29, 78, 216, 1);
+  }
+
+  hr {
+    /* tailwind bg-gray-700 my-4 */
+    background-color: rgba(55, 65, 81, 1);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    /* tailwind mb-1 */
+    margin-bottom: 0.25rem;
+  }
+
+  table {
+    /* tailwind my-4 */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+
+    thead {
+      /* tailwind bg-gray-900 text-white */
+      background-color: rgba(17, 24, 39, 1);
+      color: white;
+      //
+    }
+
+    tr:nth-child(even) {
+      /* tailwind bg-gray-300 */
+      background-color: rgba(209, 213, 219, 1);
+    }
+
+    th,
+    td {
+      border: 1px solid #dfe2e5;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+
+  ul,
+  ol {
+    /* tailwind ml-8 mb-4 */
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    /* tailwind list-disc */
+    list-style-type: disc;
+  }
+
+  ol {
+    /* tailwind list-decimal */
+    list-style-type: decimal;
+  }
+
+  .blogimg {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* UNSURE */
+
+  main {
+    padding: 2rem;
+  }
+
+  header {
+    margin-bottom: 3rem;
+  }
+
+  div > .highlight {
+    background: #f7f7f7;
+    padding: 0.5em;
+    margin: 0 0 16px 0;
+  }
 }
-
-.content-body h3 {
-    color: blue;
-}
-// h3 {
-//     font-size: 1.5rem;
-//     font-weight: normal;
-// }
-
-// main {
-//     padding: 2rem;
-// }
-
-// header {
-//     margin-bottom: 3rem;
-// }
-
-// code {
-//     background-color: rgba(27, 31, 35, .05);
-//     padding: 0.2em 0.4em;
-//     border-bottom: 1px solid #0D47A1;
-//     line-height: 1.5;
-//     font-size: 1.1em;
-// }
-
-// blockquote {
-//     border-left: 0.5rem solid #0D47A1;
-//     padding-left: 1rem;
-//     font-style: italic;
-//     margin-inline-start: unset;
-//     margin-inline-end: unset;
-//     margin-block-start: unset;
-//     margin-block-end: unset;
-// }
-
-// table {
-//     border-collapse: collapse;
-// }
-
-// tr:nth-child(even) {
-//     background-color: #f6f8fa;
-// }
-
-// th,
-// td {
-//     border: 1px solid #dfe2e5;
-//     padding: 0.25rem 0.5rem;
-// }
-
-// div>.highlight {
-//     background: #f7f7f7;
-//     padding: 0.5em;
-//     margin: 0 0 16px 0;
-// }
-
-// .blogimg {
-//     display: block;
-//     max-width: 100%;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-
-// .default-layout {
-//     /* Shared layout */
-//     display: flex;
-//     flex-direction: row;
-//     max-height: 100vh;
-// }
-
-// article {
-//     .tags {
-//         display: flex;
-//         margin-top: 2rem;
-//         padding: 0rem 2rem;
-//         flex-wrap: wrap
-//     }
-
-//     .article-tag {
-//         margin-right: 0.75rem;
-//         padding: 0.2rem 0.5rem;
-//         background-color: $primary-dark-color;
-//         color: $primary-text-color;
-//         border-radius: 5px;
-//         font-size: 0.8rem;
-//     }
-// }
-
-// .sidebar {
-//     /* sidebar - containing main nav links */
-//     background-color: $primary-dark-color;
-//     padding: 3rem;
-//     color: $primary-text-color;
-//     display: flex;
-//     flex-direction: column;
-//     height: 100vh;
-
-
-//     .title {
-//         display: block;
-//         padding: 1rem 0;
-//         font-size: 2rem;
-//         text-decoration: none;
-//         color: $primary-text-color;
-//     }
-
-//     .nav-link {
-//         padding: 0;
-//         margin: 0;
-//         color: $primary-text-color;
-//         font-style: italic;
-//         font-size: 1.2rem;
-//         opacity: 0.7;
-//         padding-bottom: 0.5rem;
-//     }
-
-//     .icon-link {
-//         display: inline;
-//         margin-right: 0.5rem;
-//         padding: 0;
-//     }
-
-//     img.avatar {
-//         /* profile picture */
-//         border-radius: 50%;
-//         max-width: 200px;
-//         max-height: 200px;
-//         border: 3px solid $primary-text-color;
-//     }
-// }
-
-// main {
-//     overflow: scroll;
-// }
-
-// #sysk {
-//     .cards {
-//         display: flex;
-//         flex-wrap: wrap;
-
-//         .card {
-//             display: flex;
-//             flex-direction: row;
-//             align-items: center;
-//             color: $alt-text-color;
-//             padding: 1rem;
-//             margin-bottom: 0.5rem;
-//             margin-right: 0.5rem;
-//             width: 30ch;
-
-//             .icon {
-//                 width: 5rem;
-//                 height: 5rem;
-//                 margin-right: 1rem;
-//             }
-
-//             .title {
-//                 display: inline;
-//                 font-size: 1.5rem;
-//                 font-weight: 700;
-//                 word-wrap: break-word;
-//             }
-//         }
-
-//         .card:hover {
-//             text-decoration: none;
-//             background-color: $primary-dark-color;
-//             color: $primary-text-color;
-//         }
-//     }
-
-// }
-
-// @media (max-width: 720px) {
-//     .default-layout {
-//         flex-direction: column;
-//         max-height: unset;
-//     }
-
-//     .sidebar {
-//         align-items: center;
-//         height: unset;
-//     }
-
-//     #sysk {
-//         .cards {
-//             .card {
-//                 width: 100%;
-//             }
-//         }
-//     }
-// }
