@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: markdownpage
 title:  "Reading List - Cloud Dev"
 ---
 

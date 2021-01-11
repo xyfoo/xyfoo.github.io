@@ -4,18 +4,32 @@
 /*
 Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=0f4c82&secondary.color=FFFFFF
 */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --sidebar-bg-color: purple;
+    --sidebar-text-color: white;
+    --avatar-border-color: white;
+    --tag-bg-color: blue;
+    --tag-text-color: white;
+}
 
-$primary-color: #0d4a82;
-$primary-text-color: #FFFFFF;
-$primary-light-color: #4b75b2;
-$primary-dark-color: #002355;
-$alt-text-color: #000000;
+[data-color-mode=dark] {
+    --bg-color: black;
+    --text-color: white;
+    --sidebar-bg-color: gray;
+}
 
 body {
     font-family: "Segoe UI", "Segoe UI Web Regular", "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, Arial, Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1.0625rem;
     line-height: 1.5;
-    background-color: #f4f4f4;
+    background-color:var(--bg-color);
+    color: var(--text-color);
+}
+
+.markdown {
+
 }
 
 h3 {
@@ -94,8 +108,8 @@ article {
     .article-tag {
         margin-right: 0.75rem;
         padding: 0.2rem 0.5rem;
-        background-color: $primary-dark-color;
-        color: $primary-text-color;
+        background-color: var(--tag-bg-color);
+        color: var(--tag-text-color);
         border-radius: 5px;
         font-size: 0.8rem;
     }
@@ -103,26 +117,26 @@ article {
 
 .sidebar {
     /* sidebar - containing main nav links */
-    background-color: $primary-dark-color;
+    background-color: var(--sidebar-bg-color);
     padding: 3rem;
-    color: $primary-text-color;
     display: flex;
     flex-direction: column;
     height: 100vh;
 
+    .title, .nav-link, .icon-link {
+        color: var(--sidebar-text-color);
+    }
 
     .title {
         display: block;
         padding: 1rem 0;
         font-size: 2rem;
         text-decoration: none;
-        color: $primary-text-color;
     }
 
     .nav-link {
         padding: 0;
         margin: 0;
-        color: $primary-text-color;
         font-style: italic;
         font-size: 1.2rem;
         opacity: 0.7;
@@ -140,7 +154,7 @@ article {
         border-radius: 50%;
         max-width: 200px;
         max-height: 200px;
-        border: 3px solid $primary-text-color;
+        border: 3px solid var(--avatar-border-color);
     }
 }
 
@@ -157,7 +171,6 @@ main {
             display: flex;
             flex-direction: row;
             align-items: center;
-            color: $alt-text-color;
             padding: 1rem;
             margin-bottom: 0.5rem;
             margin-right: 0.5rem;
@@ -179,8 +192,6 @@ main {
 
         .card:hover {
             text-decoration: none;
-            background-color: $primary-dark-color;
-            color: $primary-text-color;
         }
     }
 

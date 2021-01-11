@@ -1,52 +1,50 @@
 ---
 layout: default
-comments: false
+comments: true
 ---
-
-{% assign post = site.posts.first %}
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <!-- Post title -->
     <header>
-        <h1 class="text-center" itemprop="name headline">{{ post.title | escape }}</h1>
-        {%- if post.author -%}
+        <h1 class="text-center" itemprop="name headline">{{ page.title | escape }}</h1>
+        {%- if page.author -%}
         <div class="text-center" itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                itemprop="name">{{ post.author }}</span></div>
+                itemprop="name">{{ page.author }}</span></div>
         {%- endif -%}
-        <div class="text-center" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+        <div class="text-center" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            {{ post.date | date: date_format }}
+            {{ page.date | date: date_format }}
         </div>
     </header>
 
     <!-- Post tags -->
     <div class="tags">
-        {% for tag in post.tags %}
+        {% for tag in page.tags %}
         <div class="article-tag">{{ tag }}</div>
         {% endfor %}
     </div>
 
     <!-- Post content -->
     <div itemprop="articleBody" class="markdown">
-        {{ post.content }}
+        {{ page.content }}
     </div>
 
 
     <!-- Other posts -->
     <div style="display: flex; justify-content: space-between; margin-top: 2rem; padding: 0rem 2rem;">
-        {% if post.previous.url %}
-        <a class="article-nav-link" href="{{post.previous.url}}">
+        {% if page.previous.url %}
+        <a class="article-nav-link" href="{{page.previous.url}}">
             <div>Previous article</div>
-            <div class="article-nav-title">{{post.previous.title}}</div>
+            <div class="article-nav-title">{{page.previous.title}}</div>
         </a>
         {% endif %}
         <div style="flex-grow: 1" />
-        {% if post.next.url %}
-        <a class="article-nav-link" href="{{post.next.url}}">
+        {% if page.next.url %}
+        <a class="article-nav-link" href="{{page.next.url}}">
             <div>Next article</div>
-            <div class="article-nav-title">{{post.previous.title}}</div>
+            <div class="article-nav-title">{{page.previous.title}}</div>
         </a>
         {% endif %}
     </div>
-    <a href=" {{ post.url | relative_url }}" hidden></a>
+    <a href=" {{ page.url | relative_url }}" hidden></a>
 </article>
