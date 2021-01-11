@@ -24,16 +24,17 @@
                     <i class="fas fa-rss fa-1x"></i>
                 </a>
             </div>
-            <!-- <div style="display: flex;">
-                <button style="display: flex; flex-direction: row;">
+            <div style="flex-grow: 1"></div>
+            <div class="color-mode-container" >
+                <button id="darkMode" class="color-mode-button">
                     <i class="fas fa-moon"></i>
-                    <div>Switch to dark mode</div>
+                    <div>Dark mode</div>
                 </button>
-                <button style="display: flex; flex-direction: row;">
+                <button id="lightMode" class="color-mode-button">
                     <i class="far fa-sun"></i>
-                    <div>Switch to light mode</div>
+                    <div>Light mode</div>
                 </button>
-            </div> -->
+            </div>
         </nav>
         <main aria-label='Content' class="container-fluid">
             {{ content }}
