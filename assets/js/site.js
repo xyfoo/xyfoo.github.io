@@ -1,4 +1,8 @@
 let setColorMode = function(colorMode) {
+    if(colorMode == "system" && window.matchMedia) {
+        colorMode = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark": "light";
+    }
+
     let bodyElement = document.querySelector("body");
     bodyElement.setAttribute("data-color-mode", colorMode);
 
@@ -22,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // set button mode
     let darkModeButton = document.querySelector("button#darkMode");
     let lightModeButton = document.querySelector("button#lightMode");
+    let systemModeButton = document.querySelector("button#systemMode");
 
     darkModeButton.addEventListener("click", function(event) {
         setColorMode("dark");
@@ -29,6 +34,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     lightModeButton.addEventListener("click", function(event) {
         setColorMode("light");
+    })
+
+    systemModeButton.addEventListener("click", function(event) {
+        setColorMode("system");
     })
 
 

@@ -4,17 +4,17 @@ title: Archives
 permalink: /archives/
 ---
 
-<h2>{{ page.list_title | default: "Posts" }}</h2>
+<h1 style="margin-bottom: 2rem;">{{ page.list_title | default: "Posts" }}</h1>
 
 {%- if site.posts.size > 0 -%}
-<div style="display: flex; flex-direction: column;">
+<div class="archives-container">
     {%- for post in site.posts -%}
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    <div style=" border: 1px solid gray; padding: 1em; margin-bottom: 1em; background-color: white">
-        <div style="font-size: 0.75em; margin-bottom: 0.5em;">{{ post.date | date: date_format }}</div>
-        <a href="{{ post.url | relative_url }}"><div style="font-size: 1.25em; margin: 0 0 1em 0;">{{ post.title | escape }}</div></a>
+    <div class="archive-item">
+        <div style="margin-bottom: 0.5rem;">{{ post.date | date: date_format }}</div>
+        <a href="{{ post.url | relative_url }}"><div style="font-size: 1.5rem; margin: 0 0 1rem 0;">{{ post.title | escape }}</div></a>
         {%- if site.show_excerpts -%}
-        <div style="font-size: 0.75em">
+        <div>
             {{ post.excerpt }}
         </div>
         {%- endif -%}

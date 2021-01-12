@@ -6,45 +6,43 @@ comments: false
 {% assign post = site.posts.first %}
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-    <!-- Post title -->
     <header>
-        <h1 class="text-center" itemprop="name headline">{{ post.title | escape }}</h1>
-        {%- if post.author -%}
-        <div class="text-center" itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                itemprop="name">{{ post.author }}</span></div>
-        {%- endif -%}
-        <div class="text-center" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            {{ post.date | date: date_format }}
+        <!-- Post title -->
+        <h1 itemprop="name headline">{{ post.title | escape }}</h1>
+        <!-- Author & date time-->
+        <div style="display: flex;">
+            {%- if post.author -%}
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span
+                    itemprop="name">{{ post.author }}</span></div>
+            {%- endif -%}
+            <div datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ post.date | date: date_format }}
+            </div>
+        </div>
+        <!-- Post tags -->
+        <div class="tags">
+            {% for tag in post.tags %}
+            <div class="article-tag">{{ tag }}</div>
+            {% endfor %}
         </div>
     </header>
-
-    <!-- Post tags -->
-    <div class="tags">
-        {% for tag in post.tags %}
-        <div class="article-tag">{{ tag }}</div>
-        {% endfor %}
-    </div>
-
     <!-- Post content -->
     <div itemprop="articleBody" class="markdown">
         {{ post.content }}
     </div>
-
-
     <!-- Other posts -->
-    <div style="display: flex; justify-content: space-between; margin-top: 2rem; padding: 0rem 2rem;">
+    <div class="post-nav">
         {% if post.previous.url %}
-        <a class="article-nav-link" href="{{post.previous.url}}">
-            <div>Previous article</div>
-            <div class="article-nav-title">{{post.previous.title}}</div>
+        <a class="post-nav-item previous" href="{{post.previous.url}}">
+            <div class="post-category">Previous article</div>
+            <div class="post-title">{{post.previous.title}}</div>
         </a>
         {% endif %}
-        <div style="flex-grow: 1" />
         {% if post.next.url %}
-        <a class="article-nav-link" href="{{post.next.url}}">
-            <div>Next article</div>
-            <div class="article-nav-title">{{post.previous.title}}</div>
+        <a class="post-nav-item next" href="{{post.next.url}}">
+            <div class="post-category">Next article</div>
+            <div class="post-title">{{post.next.title}}</div>
         </a>
         {% endif %}
     </div>

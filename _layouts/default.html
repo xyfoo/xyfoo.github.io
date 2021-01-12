@@ -28,15 +28,19 @@
             <div class="color-mode-container" >
                 <button id="darkMode" class="color-mode-button">
                     <i class="fas fa-moon"></i>
-                    <div>Dark mode</div>
+                    <div>Dark</div>
                 </button>
                 <button id="lightMode" class="color-mode-button">
-                    <i class="far fa-sun"></i>
-                    <div>Light mode</div>
+                    <i class="fas fa-sun"></i>
+                    <div>Light</div>
+                </button>
+                <button id="systemMode" class="color-mode-button">
+                    <i class="fas fa-mobile"></i>
+                    <div>System</div>
                 </button>
             </div>
         </nav>
-        <main aria-label='Content' class="container-fluid">
+        <main aria-label='Content'>
             {{ content }}
         </main>
     </div>
