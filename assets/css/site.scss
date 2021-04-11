@@ -5,42 +5,53 @@
 Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&primary.color=0f4c82&secondary.color=FFFFFF
 */
 :root {
+  // Body
   --bg-color: white;
   --text-color: black;
+  --hr-color: rgba(0, 0, 0, 0.5);
+  // Sidebar
   --sidebar-bg-color: #1a237e;
   --sidebar-text-color: white;
   --avatar-border-color: white;
-  --tag-bg-color: blue;
+  // Article tag
+  --tag-bg-color: #1a237e;
   --tag-text-color: white;
+  // Markdown
   --md-table-header-bg-color: black;
   --md-table-header-text-color: white;
   --md-table-row-odd-bg-color: white;
-  --md-table-row-even-bg-color: lightgray;
+  --md-table-row-even-bg-color: rgb(240, 240, 240);
   --md-table-row-text-color: black;
   --md-table-border-color: black;
-  --md-link-text-color: #007bff;
-  --md-blockquote-color: #007bff;
-  --md-code-bg-color: rgba(27, 31, 35, 0.05);
-  --md-code-text-color: black;
-  --hr-color: rgba(0, 0, 0, 0.5);
+  --md-link-text-color: #0037ff;
+  --md-blockquote-line-color: #1a237e;
+  --md-blockquote-bg-color: rgb(240, 240, 240);
+  // Code
+  --md-codeinline-bg-color: rgb(220, 220, 220);
+  --md-codeinline-text-color: black;
+  --md-codeblock-bg-color: rgb(220, 220, 220);
+  --md-codeblock-text-color: black;
 }
 
 [data-color-mode="dark"] {
+  --hr-color: rgba(255, 255, 255, 0.5);
   --bg-color: black;
-  --text-color: white;
+  --text-color: rgba(210,210,210);
   --sidebar-bg-color: #1b1b1b;
-
-  --md-table-header-bg-color: darkgray;
-  --md-table-header-text-color: black;
+  --tag-bg-color: #1b1b1b;
+  --md-table-header-bg-color: rgb(60,60,60);
+  --md-table-header-text-color: white;
   --md-table-row-odd-bg-color: black;
   --md-table-row-even-bg-color: black;
   --md-table-row-text-color: white;
   --md-table-border-color: darkgray;
-  --md-link-text-color: #4dd0e1;
-  --md-blockquote-color: #4dd0e1;
-  --md-code-bg-color: rgba(255, 255, 255, 0.25);
-  --md-code-text-color: yellow;
-  --hr-color: rgba(255, 255, 255, 0.5);
+  --md-link-text-color: #85bbff;
+  --md-blockquote-line-color: #85bbff;
+  --md-blockquote-bg-color: rgb(30, 30, 30);
+  --md-codeinline-bg-color: rgb(30, 30, 30);
+  --md-codeinline-text-color: yellow;
+  --md-codeblock-bg-color: rgb(30, 30, 30);
+  --md-codeblock-text-color: white;
 }
 
 body {
@@ -62,6 +73,25 @@ main {
   padding: 2rem;
   overflow: auto;
   flex-grow: 1;
+}
+
+// Markdown blocks of code
+.highlighter-rouge pre.highlight {
+  background-color: var(--md-codeblock-bg-color);
+  overflow: hidden;
+  padding: 0.2em 0.4em;
+
+  code {
+    background-color: var(--md-codeblock-bg-color);
+    color: var(--md-codeblock-text-color);
+  }
+}
+
+// Markdown inline code
+code.highlighter-rouge {
+  background-color: var(--md-codeinline-bg-color);
+  color: var(--md-codeinline-text-color);
+  padding: 0.2em 0.4em;
 }
 
 header {
@@ -88,7 +118,6 @@ header {
   td {
     background-color: white !important;
     border: none !important;
-    border-bottom: 1px solid lightgray !important;
   }
 
   td.js-line-number {
@@ -96,14 +125,16 @@ header {
   }
 }
 
-.markdown {
+:not(.gist) {
   table {
     border-collapse: collapse;
+    margin: 1em 0;
   }
 
   th {
     background-color: var(--md-table-header-bg-color);
     color: var(--md-table-header-text-color);
+    font-weight: normal;
   }
 
   tr {
@@ -123,42 +154,33 @@ header {
     border: 1px solid var(--md-table-border-color);
     padding: 0.25rem 0.5rem;
   }
-
-  a {
-    color: var(--md-link-text-color);
-  }
-
-  .blogimg {
-    display: block;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  blockquote {
-    border-left: 0.5rem solid var(--md-blockquote-color);
-    padding-left: 1rem;
-    font-style: italic;
-    margin-inline-start: unset;
-    margin-inline-end: unset;
-    margin-block-start: unset;
-    margin-block-end: unset;
-    font-weight: 300;
-  }
-
-  code {
-    background-color: var(--md-code-bg-color);
-    padding: 0.2em 0.4em;
-    color: var(--md-code-text-color);
-  }
-
-  div > .highlight {
-    background-color: var(--md-code-bg-color);
-    color: var(--md-code-text-color);
-    padding: 0.5em;
-    margin-bottom: 1rem;
-  }
 }
+
+a {
+  color: var(--md-link-text-color);
+}
+
+.blogimg {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  border-left: 0.5rem solid var(--md-blockquote-line-color);
+  background-color: var(--md-blockquote-bg-color);
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  font-style: italic;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+
 
 .sidebar {
   /* sidebar - containing main nav links */
@@ -352,3 +374,5 @@ h3 {
     }
   }
 }
+
+

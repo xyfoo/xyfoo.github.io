@@ -8,7 +8,7 @@
         <nav class="sidebar">
             <img class="avatar" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
             <a class="title" href="/">Frankie Foo's Blog</a>
-            <a class="nav-link" href="/archives">Archives</a>
+            <a class="nav-link" href="/archives">Posts</a>
             <a class="nav-link" href="/reading-list">Reading List</a>
             <div style="padding: 1rem 0;">
                 <a class="nav-link icon-link" href="https://www.linkedin.com/in/frankiefoo/" target="_blank">
@@ -26,13 +26,13 @@
             </div>
             <div style="flex-grow: 1"></div>
             <div class="color-mode-container" >
-                <button id="darkMode" class="color-mode-button">
-                    <i class="fas fa-moon"></i>
-                    <div>Dark</div>
-                </button>
                 <button id="lightMode" class="color-mode-button">
                     <i class="fas fa-sun"></i>
                     <div>Light</div>
+                </button>
+                <button id="darkMode" class="color-mode-button">
+                    <i class="fas fa-moon"></i>
+                    <div>Dark</div>
                 </button>
                 <button id="systemMode" class="color-mode-button">
                     <i class="fas fa-mobile"></i>
@@ -44,6 +44,7 @@
             {{ content }}
         </main>
     </div>
+    <script src="{{ '/assets/js/themecolor.js' | absolute_url }}"></script>
 </body>
 
 {%- include sitescript.html -%}
