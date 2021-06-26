@@ -26,11 +26,11 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
   --md-link-text-color: #0037ff;
   --md-blockquote-line-color: #1a237e;
   --md-blockquote-bg-color: rgb(240, 240, 240);
-  // Code
-  --md-codeinline-bg-color: rgb(220, 220, 220);
-  --md-codeinline-text-color: black;
-  --md-codeblock-bg-color: rgb(220, 220, 220);
-  --md-codeblock-text-color: black;
+  // // Code
+  // --md-codeinline-bg-color: rgb(220, 220, 220);
+  // --md-codeinline-text-color: black;
+  // --md-codeblock-bg-color: rgb(220, 220, 220);
+  // --md-codeblock-text-color: black;
 }
 
 [data-color-mode="dark"] {
@@ -48,10 +48,10 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
   --md-link-text-color: #85bbff;
   --md-blockquote-line-color: #85bbff;
   --md-blockquote-bg-color: rgb(30, 30, 30);
-  --md-codeinline-bg-color: rgb(30, 30, 30);
-  --md-codeinline-text-color: yellow;
-  --md-codeblock-bg-color: rgb(30, 30, 30);
-  --md-codeblock-text-color: white;
+  // --md-codeinline-bg-color: rgb(30, 30, 30);
+  // --md-codeinline-text-color: yellow;
+  // --md-codeblock-bg-color: rgb(30, 30, 30);
+  // --md-codeblock-text-color: white;
 }
 
 body {
@@ -76,23 +76,23 @@ main {
 }
 
 // Markdown blocks of code
-.highlighter-rouge pre.highlight {
-  background-color: var(--md-codeblock-bg-color);
-  overflow: hidden;
-  padding: 0.2em 0.4em;
+// .highlighter-rouge pre.highlight {
+//   background-color: var(--md-codeblock-bg-color);
+//   overflow: hidden;
+//   padding: 0.2em 0.4em;
 
-  code {
-    background-color: var(--md-codeblock-bg-color);
-    color: var(--md-codeblock-text-color);
-  }
-}
+//   code {
+//     background-color: var(--md-codeblock-bg-color);
+//     color: var(--md-codeblock-text-color);
+//   }
+// }
 
-// Markdown inline code
-code.highlighter-rouge {
-  background-color: var(--md-codeinline-bg-color);
-  color: var(--md-codeinline-text-color);
-  padding: 0.2em 0.4em;
-}
+// // Markdown inline code
+// code.highlighter-rouge {
+//   background-color: var(--md-codeinline-bg-color);
+//   color: var(--md-codeinline-text-color);
+//   padding: 0.2em 0.4em;
+// }
 
 header {
   margin-bottom: 3rem;

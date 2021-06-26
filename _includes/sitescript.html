@@ -16,3 +16,13 @@
 <!-- Adobe Font-->
 <link rel="stylesheet" href="https://use.typekit.net/mbh2aut.css">
 <script src="{{ '/assets/js/site.js' | absolute_url }}"></script>
+<!-- Highlight.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+
+<script>
+    hljs.highlightAll(); //highlight.js
+    document.querySelectorAll('code.highlighter-rouge').forEach((el) => {
+        // overwrite highlighter-rouge element
+        hljs.highlightElement(el);
+    });
+</script>

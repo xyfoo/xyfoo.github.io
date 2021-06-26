@@ -9,6 +9,19 @@ permalink: /archives/
 {%- if site.posts.size > 0 -%}
 <div class="archives-container">
     {%- for post in site.posts -%}
+    {%- assign date_format = site.minima.date_format | default: "%Y %b %-d" -%}
+    <div style="display:flex; margin-bottom: 0.5rem;">
+        <div style="white-space: pre; min-width: 15ch;">{{ post.date | date: date_format }}</div>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </div>
+    {%- endfor -%}
+</div>
+{%- endif -%}
+
+{% comment %}
+{%- if site.posts.size > 0 -%}
+<div class="archives-container">
+    {%- for post in site.posts -%}
     {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
     <div class="archive-item">
         <div style="margin-bottom: 0.5rem;">{{ post.date | date: date_format }}</div>
@@ -22,3 +35,4 @@ permalink: /archives/
     {%- endfor -%}
 </div>
 {%- endif -%}
+{% endcomment %}
