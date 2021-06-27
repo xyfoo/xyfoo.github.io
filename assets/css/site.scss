@@ -7,7 +7,7 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
 :root {
   // Body
   --bg-color: white;
-  --text-color: black;
+  --text-color: #1F1F1F;
   --hr-color: rgba(0, 0, 0, 0.5);
   // Sidebar
   --sidebar-bg-color: #1a237e;
@@ -17,7 +17,7 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
   --tag-bg-color: #1a237e;
   --tag-text-color: white;
   // Markdown
-  --md-table-header-bg-color: black;
+  --md-table-header-bg-color: #1F1F1F;
   --md-table-header-text-color: white;
   --md-table-row-odd-bg-color: white;
   --md-table-row-even-bg-color: rgb(240, 240, 240);
@@ -26,19 +26,14 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
   --md-link-text-color: #0037ff;
   --md-blockquote-line-color: #1a237e;
   --md-blockquote-bg-color: rgb(240, 240, 240);
-  // // Code
-  // --md-codeinline-bg-color: rgb(220, 220, 220);
-  // --md-codeinline-text-color: black;
-  // --md-codeblock-bg-color: rgb(220, 220, 220);
-  // --md-codeblock-text-color: black;
 }
 
 [data-color-mode="dark"] {
   --hr-color: rgba(255, 255, 255, 0.5);
-  --bg-color: black;
+  --bg-color: #1F1F1F;
   --text-color: rgba(210,210,210);
-  --sidebar-bg-color: #1b1b1b;
-  --tag-bg-color: #1b1b1b;
+  --sidebar-bg-color: #353535;
+  --tag-bg-color: #353535;
   --md-table-header-bg-color: rgb(60,60,60);
   --md-table-header-text-color: white;
   --md-table-row-odd-bg-color: black;
@@ -48,12 +43,11 @@ Color palette: https://material.io/resources/color/#!/?view.left=1&view.right=0&
   --md-link-text-color: #85bbff;
   --md-blockquote-line-color: #85bbff;
   --md-blockquote-bg-color: rgb(30, 30, 30);
-  // --md-codeinline-bg-color: rgb(30, 30, 30);
-  // --md-codeinline-text-color: yellow;
-  // --md-codeblock-bg-color: rgb(30, 30, 30);
-  // --md-codeblock-text-color: white;
-}
 
+  code.hljs {
+    background: var(--sidebar-bg-color) !important;
+  }
+}
 body {
   font-family: "Segoe UI", "Segoe UI Web Regular",
     "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, Arial, Roboto,
@@ -73,26 +67,11 @@ main {
   padding: 2rem;
   overflow: auto;
   flex-grow: 1;
+
+  article {
+    max-width: 50em;
+  }
 }
-
-// Markdown blocks of code
-// .highlighter-rouge pre.highlight {
-//   background-color: var(--md-codeblock-bg-color);
-//   overflow: hidden;
-//   padding: 0.2em 0.4em;
-
-//   code {
-//     background-color: var(--md-codeblock-bg-color);
-//     color: var(--md-codeblock-text-color);
-//   }
-// }
-
-// // Markdown inline code
-// code.highlighter-rouge {
-//   background-color: var(--md-codeinline-bg-color);
-//   color: var(--md-codeinline-text-color);
-//   padding: 0.2em 0.4em;
-// }
 
 header {
   margin-bottom: 3rem;
@@ -247,6 +226,11 @@ blockquote {
       margin-right: 1rem;
     }
   }
+
+  .page-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .post-nav {
@@ -350,9 +334,24 @@ h3 {
   .sidebar {
     align-items: center;
     height: unset;
+    padding: 1rem;
 
     .color-mode-container {
       flex-direction: row;
+    }
+
+    img.avatar {
+      /* profile picture */
+      display: none;
+    }
+
+    .page-links {
+      flex-direction: column;
+      flex-direction: row;
+
+      .nav-link {
+        margin-right: 1em;
+      }
     }
   }
 
