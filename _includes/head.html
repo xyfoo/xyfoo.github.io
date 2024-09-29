@@ -4,12 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {%- seo -%}
     {% feed_meta %}
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="{{ '/assets/css/site.css' | absolute_url }}"/>
+    <!-- IBM Carbon design system -->
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.13.1/ui-shell.min.js"></script>
+    <script type="module" src="https://1.www.s81c.com/common/carbon/web-components/version/v2.13.1/tag.min.js"></script>
+    <script type="module"
+        src="https://1.www.s81c.com/common/carbon/web-components/version/v2.13.1/button.min.js"></script>
+    <link rel="stylesheet" href="https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.13.1/plex.css" />
     <!-- Highlight JS CSS -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.0.1/build/styles/vs2015.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | absolute_url }}" />
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}

@@ -6,14 +6,14 @@ comments: false
 {% assign post = site.posts.first %}
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
+    <header class="header">
         <!-- Post title -->
-        <h1 itemprop="name headline">{{ post.title | escape }}</h1>
+        <h1 class="header__title">{{ post.title | escape }}</h1>
         <!-- Author & date time-->
-        <div style="display: flex;">
+        <div class="header__meta">
             {%- if post.author -%}
-            <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-                    itemprop="name">{{ post.author }}</span></div>
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author
+                    }}</span></div>
             {%- endif -%}
             <div datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -21,29 +21,34 @@ comments: false
             </div>
         </div>
         <!-- Post tags -->
-        <div class="tags">
+        <div class="header__tags">
             {% for tag in post.tags %}
-            <div class="article-tag">{{ tag }}</div>
+            <cds-tag type="blue" title="{{ tag }}">{{ tag }}</cds-tag>
             {% endfor %}
         </div>
     </header>
     <!-- Post content -->
-    <div itemprop="articleBody">
+    <div class="content">
         {{ post.content }}
     </div>
     <!-- Other posts -->
     <div class="post-nav">
         {% if post.previous.url %}
-        <a class="post-nav-item previous" href="{{post.previous.url}}">
-            <div class="post-category">Previous article</div>
-            <div class="post-title">{{post.previous.title}}</div>
+        <cds-button class="post-nav__button previous" href="{{post.previous.url}}">
+            <div class="post-nav__content">
+                <div class="post-nav__category">Previous</div>
+            <div class="post-nav__title">{{post.previous.title}}</div>
+            </div>
+        </cds-button>
         </a>
         {% endif %}
         {% if post.next.url %}
-        <a class="post-nav-item next" href="{{post.next.url}}">
-            <div class="post-category">Next article</div>
-            <div class="post-title">{{post.next.title}}</div>
-        </a>
+        <cds-button class="post-nav__button previous" href="{{post.next.url}}" kind="tertiary">
+            <div class="post-nav__content">
+                <div class="post-nav__category">Next</div>
+            <div class="post-nav__title">{{post.next.title}}</div>
+            </div>
+        </cds-button>
         {% endif %}
     </div>
     <a href=" {{ post.url | relative_url }}" hidden></a>

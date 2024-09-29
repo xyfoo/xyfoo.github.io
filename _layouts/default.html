@@ -3,49 +3,40 @@
 
 {%- include head.html -%}
 
+
+
 <body>
-    <div class="default-layout">
-        <nav class="sidebar">
-            <img class="avatar" src="{{ '/assets/img/avatar.png' | absolute_url }}" />
-            <a class="title" href="/">Frankie Foo's Blog</a>
-            <div class="page-links">
-                <a class="nav-link" href="/archives">Posts</a>
-                <a class="nav-link" href="/reading-list">Readings</a>
-            </div>
-            <div style="padding: 1rem 0;">
-                <a class="nav-link icon-link" href="https://www.linkedin.com/in/frankiefoo/" target="_blank">
-                    <i class="fab fa-linkedin fa-1x"></i>
-                </a>
-                <a class="nav-link icon-link" href="https://www.github.com/xyfoo" target="_blank">
-                    <i class="fab fa-github fa-1x"></i>
-                </a>
-                <a class="nav-link icon-link" href="https://www.twitter.com/frankiefoo732" target="_blank">
-                    <i class="fab fa-twitter fa-1x"></i>
-                </a>
-                <a class="nav-link icon-link" href="/feed.xml" target="_blank">
-                    <i class="fas fa-rss fa-1x"></i>
-                </a>
-            </div>
-            <div style="flex-grow: 1"></div>
-            <div class="color-mode-container" >
-                <button id="lightMode" class="color-mode-button">
-                    <i class="fas fa-sun"></i>
-                    <div>Light</div>
-                </button>
-                <button id="darkMode" class="color-mode-button">
-                    <i class="fas fa-moon"></i>
-                    <div>Dark</div>
-                </button>
-                <button id="systemMode" class="color-mode-button">
-                    <i class="fas fa-mobile"></i>
-                    <div>System</div>
-                </button>
-            </div>
-        </nav>
-        <main aria-label='Content'>
-            {{ content }}
-        </main>
-    </div>
+    <cds-header aria-label="IBM Platform Name">
+        <cds-header-menu-button button-label-active="Close menu"
+            button-label-inactive="Open menu"></cds-header-menu-button>
+        <cds-header-name href="/" prefix="Frankie Foo's">Site</cds-header-name>
+        <cds-header-nav menu-bar-label="IBM [Platform]">
+            <cds-header-nav-item href="/archives">Posts</cds-header-nav-item>
+            <cds-header-nav-item href="/reading-list">Readings</cds-header-nav-item>
+            <cds-header-nav-item href="/about">About</cds-header-nav-item>
+            <!-- <cds-header-menu menu-label="Link 4" trigger-content="Link 4">
+            <cds-header-menu-item href="javascript:void 0"
+              >Sub-link 1</cds-header-menu-item
+            >
+            <cds-header-menu-item href="javascript:void 0"
+              >Sub-link 2</cds-header-menu-item
+            >
+            <cds-header-menu-item href="javascript:void 0"
+              >Sub-link 3</cds-header-menu-item
+            >
+          </cds-header-menu> -->
+        </cds-header-nav>
+    </cds-header>
+    <!-- <cds-side-nav aria-label="Side navigation">
+        <cds-side-nav-items>
+            <cds-side-nav-link href="/archives">Posts</cds-side-nav-link>
+            <cds-side-nav-link href="/reading-list">Readings</cds-side-nav-link>
+            <cds-side-nav-link href="/about">About</cds-side-nav-link>
+        </cds-side-nav-items>
+    </cds-side-nav> -->
+    <main>
+        {{content}}
+    </main>
     <script src="{{ '/assets/js/themecolor.js' | absolute_url }}"></script>
 </body>
 
