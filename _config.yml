@@ -27,7 +27,7 @@ disqus:
   shortname: frankie-blog
 
 # Build settings
-markdown: kramdown
+markdown: GFM
 theme: minima
 plugins:
   - jekyll-feed
