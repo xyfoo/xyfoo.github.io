@@ -1,0 +1,36 @@
+{
+    "lastUpdated": "2024-04-09",
+    "data": [
+        {
+            "dateAdded": "2024-01-01",
+            "title": "abc",
+            "url": "example.com",
+            "notes": "",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
+            "see": [
+                {
+                    "title": "...",
+                    "url": "..."
+                }
+            ]
+        },
+        {
+            "title": "abc",
+            "url": "example.com",
+            "notes": "",
+            "tags": [
+                "tag1",
+                "tag2"
+            ],
+            "see": [
+                {
+                    "title": "...",
+                    "url": "..."
+                }
+            ]
+        }
+    ]
+}

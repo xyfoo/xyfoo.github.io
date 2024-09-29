@@ -1,0 +1,56 @@
+---
+layout: default
+title: Stuffs
+---
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<article class="stuffs">
+  <h1>WORK IN PROGRESS</h1>
+  <h1>{{ page.title | escape }}</h1>
+  <p>Random list of items I found interesting</p>
+  <div id="app">
+    <div class="progress" v-if="isLoading">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+    </div>
+    
+  </div>
+</article>
+
+<script setup>
+  const dataUrl = "{{'/assets/data/sharing.json' | absolute_url }}";
+
+  const { createApp, ref, reactive, onMounted } = Vue
+
+  const app = createApp({
+    setup() {
+      const state = reactive({
+        isLoading: false,
+        message: 'Hello vue!',
+        data: {},
+      })
+
+      onMounted(async () => {
+        try {
+          state.isLoading = true;
+          const response = await fetch(dataUrl);
+          const json = await response.json();
+          data = json;
+        } catch (ex) {
+          console.error("Unable to load data");
+        }
+        finally {
+          state.isLoading = false;
+        }
+
+
+      });
+
+      return {
+        state,
+      }
+    }
+  })
+  app.config.compilerOptions.delimiters = ['${', '}']
+  app.mount('#app')
+</script>
