@@ -6,154 +6,206 @@ title: Stuffs
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <article class="stuffs container-fluid">
-  <h1>!!! Work in progress !!!</h1>
-  <h1>{{ page.title | escape }}</h1>
-  <p>Random list of items I found on the web</p>
-  <div id="app">
-    <div class="loading" v-if="state.isLoading">
-      <div class="progress" >
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100"
-          aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-      </div>
-      <p style="text-align: center">loading...</p>
-    </div>
-    <div class="si-container" v-if="state.isLoading == false">
-      <div class="card si" v-for="d in state.source.data">
-        <div class="card-body">
-          <div class="si__date" v-if="d?.dateAdded">${d.dateAdded}</div>
-          <a class="si__title" v-text="d?.title" :href="d.url"></a>
-          <!-- <div :text="getHostname('d.url')"></div> -->
-          <div class="si__tags" v-if="d?.tags?.length > 0">
-            <div class="si__tag" v-for="t in d?.tags" v-text="t"></div>
-          </div>
-          <p class="si__notes" v-if="d?.notes" v-text="d?.notes"></p>
-          <div class="si__related" v-if="d?.see?.length > 0">
-            <div>Related: </div>
-            <a class="si__related-item" v-for="l in d?.see" :href="l.url">${l.title}</a>
-          </div>
+    <h1>!!! Work in progress !!!</h1>
+    <h1>{{ page.title | escape }}</h1>
+    <p>Random list of items I found on the web</p>
+    <div id="app">
+        <div class="loading" v-if="state.isLoading">
+            <div class="progress">
+                <div
+                    class="progress-bar progress-bar-striped progress-bar-animated"
+                    role="progressbar"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 100%"
+                ></div>
+            </div>
+            <p style="text-align: center">loading...</p>
         </div>
-      </div>
-    </div>
-   
+        <div class="si-container" v-if="state.isLoading == false">
+            <div
+                class="card si"
+                v-for="d in state.source.data"
+                :key="d.uid"
+                :id="'s_' + d.uid"
+            >
+                <div class="card-body">
+                    <a class="si__title" v-text="d?.title" :href="d.url"></a>
+                    <!-- <div :text="getHostname('d.url')"></div> -->
+                    <div class="si__tags" v-if="d?.tags?.length > 0">
+                        <div
+                            class="si__tag"
+                            v-for="t in d?.tags"
+                            v-text="t"
+                        ></div>
+                    </div>
 
-  </div>
+                    <!-- <div class="si__related" v-if="d?.see?.length > 0">
+                        <div>Related:</div>
+                        <a
+                            class="si__related-item"
+                            v-for="l in d?.see"
+                            :href="l.url"
+                            >${l.title}</a
+                        >
+                    </div> -->
+                    <div style="margin: 16px 0px">
+                        <button
+                            class="btn btn-sm btn-outline-secondary si_show-notes"
+                            v-if="d?.notes"
+                            @click="toggleNotes(d.uid)"
+                        >
+                            Notes
+                        </button>
+                        <div class="collapse">
+                            <p
+                                class="si__notes"
+                                v-if="d?.notes"
+                                v-text="d?.notes"
+                            ></p>
+                        </div>
+                    </div>
+                    <div class="si__date" v-if="d?.dateAdded">
+                        ${d.dateAdded}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </article>
 
 <script setup>
-  const dataUrl = "{{'/assets/data/sharing.json' | absolute_url }}";
+    const dataUrl = "{{'/assets/data/sharing.json' | absolute_url }}"
 
-  const { createApp, ref, reactive, onMounted } = Vue
+    const { createApp, ref, reactive, onMounted } = Vue
 
-  function toLocaleStr(input) {
-    let dt = DateTime.fromISO(input);
-    return dt.toLocaleString(DateTime.DATE_FULL);
-  }
-
-  const getHostname = function(href) {
-    var l = document.createElement("a");
-    l.href = href;
-    return l.hostname;
-};
-
-  const app = createApp({
-    setup() {
-      const state = reactive({
-        isLoading: false,
-        source: {},
-      })
-
-      onMounted(async () => {
-        try {
-          state.isLoading = true;
-          const response = await fetch(dataUrl);
-          const json = await response.json();
-          state.source = json;
-          // state.source = {
-          //   "lastUpdated": "2024-04-09",
-          //   "data": [
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "LinkOnly",
-          //       "url": "http://www.example.com",               
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Notes",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem Ipsum"              
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Long Notes - 1",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt."              
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Long Notes - 2",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt."              
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Long Notes - 3",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt."              
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Long Notes - 4",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt."              
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Notes, Tags",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem Ipsum",
-          //       "tags": [
-          //         "tag1",
-          //         "tag2"
-          //       ],             
-          //     },
-          //     {
-          //       "dateAdded": "2024-01-01",
-          //       "title": "Link, Notes, Tags, Related",
-          //       "url": "http://www.example.com",
-          //       "notes": "Lorem Ipsum",
-          //       "tags": [
-          //         "tag1",
-          //         "tag2"
-          //       ],
-          //       "see": [
-          //         {
-          //           "title": "Example",
-          //           "url": "http://www.example.com"
-          //         },
-          //         {
-          //           "title": "Google",
-          //           "url": "http://www.google.com"
-          //         }
-          //       ]         
-          //     }
-          //   ]
-          // };
-        } catch (ex) {
-          console.error("Unable to load data");
-        }
-        finally {
-          state.isLoading = false;
-        }
-
-
-      });
-
-      return {
-        state,
-        getHostname
-      }
+    function toLocaleStr(input) {
+        let dt = DateTime.fromISO(input)
+        return dt.toLocaleString(DateTime.DATE_FULL)
     }
-  })
-  app.config.compilerOptions.delimiters = ['${', '}']
-  app.mount('#app')
+
+    const getHostname = function (href) {
+        var l = document.createElement('a')
+        l.href = href
+        return l.hostname
+    }
+
+    const eid = function (uid) {
+        return `s_${uid}`
+    }
+
+    const toggleNotes = function (uid) {
+        let selector = `.si#s_${uid} .collapse`
+        let e = document.querySelector(selector)
+        if (e.classList.contains('show')) {
+            e.classList.remove('show')
+        } else {
+            e.classList.add('show')
+        }
+    }
+
+    const app = createApp({
+        setup() {
+            const state = reactive({
+                isLoading: false,
+                source: {},
+                itemCount: 0,
+            })
+
+            onMounted(async () => {
+                try {
+                    let useMockData = false
+                    state.isLoading = true
+                    if (useMockData == false) {
+                        const response = await fetch(dataUrl)
+                        const json = await response.json()
+                        state.source = json
+                    } else {
+                        state.source = {
+                            lastUpdated: '2024-04-09',
+                            data: [
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'LinkOnly',
+                                    url: 'http://www.example.com',
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Notes',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem Ipsum',
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Long Notes - 1',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt.',
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Long Notes - 2',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt.',
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Long Notes - 3',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt.',
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Long Notes - 4',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien tortor, lobortis at odio eu, cursus ullamcorper magna. Duis ut dolor felis. Duis nunc leo, pellentesque in dapibus eget, mattis at ipsum. Duis imperdiet sollicitudin quam, in volutpat sem ultrices eu. Donec vestibulum turpis a massa blandit tincidunt.',
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Notes, Tags',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem Ipsum',
+                                    tags: ['tag1', 'tag2'],
+                                },
+                                {
+                                    dateAdded: '2024-01-01',
+                                    title: 'Link, Notes, Tags, Related',
+                                    url: 'http://www.example.com',
+                                    notes: 'Lorem Ipsum',
+                                    tags: ['tag1', 'tag2'],
+                                    see: [
+                                        {
+                                            title: 'Example',
+                                            url: 'http://www.example.com',
+                                        },
+                                        {
+                                            title: 'Google',
+                                            url: 'http://www.google.com',
+                                        },
+                                    ],
+                                },
+                            ],
+                        }
+                    }
+                } catch (ex) {
+                    console.error('Unable to load data')
+                } finally {
+                    let withUid = state.source.data.map((x) => {
+                        let z = { ...x, uid: state.itemCount++ }
+                        return z
+                    })
+                    state.source.data = withUid
+                    state.isLoading = false
+                }
+            })
+
+            return {
+                state,
+                getHostname,
+                toggleNotes,
+            }
+        },
+    })
+    app.config.compilerOptions.delimiters = ['${', '}']
+    app.mount('#app')
 </script>
