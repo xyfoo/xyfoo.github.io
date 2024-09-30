@@ -1,36 +1,396 @@
 {
-    "lastUpdated": "2024-04-09",
-    "data": [
-        {
-            "dateAdded": "2024-01-01",
-            "title": "abc",
-            "url": "example.com",
-            "notes": "",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "see": [
-                {
-                    "title": "...",
-                    "url": "..."
-                }
-            ]
-        },
-        {
-            "title": "abc",
-            "url": "example.com",
-            "notes": "",
-            "tags": [
-                "tag1",
-                "tag2"
-            ],
-            "see": [
-                {
-                    "title": "...",
-                    "url": "..."
-                }
-            ]
-        }
-    ]
+  "lastUpdated": "2024-09-30",
+  "data": [
+    {
+      "dateAdded": "2020-02-09",
+      "title": "Philly goes to zoo: A kurbenetes story",
+      "url": "https://www.cncf.io/phippy-goes-to-the-zoo-book",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2020-02-09",
+      "title": "The Illustrated Children’s Guide to Kubernetes",
+      "url": "https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-10-03",
+      "title": "Getting Started with the DynamoDB SDK - .NET",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.NET.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-10-05",
+      "title": "DynamoDB - .NET: Object Persistence Model",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-10-09",
+      "title": "Working with Scans in DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-10-09",
+      "title": "Best Practices for Querying and Scanning Data in DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-02",
+      "title": "Hosting a static webpage on AWS S3",
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-10",
+      "title": "Simple site hosting with S3 & HTTPS",
+      "url": "https://www.freecodecamp.org/news/simple-site-hosting-with-amazon-s3-and-https-5e78017f482a/",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-12",
+      "title": "Handling Vue Router 'history' mode in AWS S3 static website hosting & CloudFront",
+      "url": "https://stackoverflow.com/a/47554827",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-18",
+      "title": "Intro to Azure CLI",
+      "url": "https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-18",
+      "title": "Azure CLI VM commands",
+      "url": "https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-18",
+      "title": "What is AWS API Gateway",
+      "url": "https://docs.aws.amazon.com/en_pv/apigateway/latest/developerguide/welcome",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-19",
+      "title": "Creating, Deploying, and Invoking a REST API in Amazon API Gateway",
+      "url": "https://docs.aws.amazon.com/en_pv/apigateway/latest/developerguide/apigateway-rest-api",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-19",
+      "title": "Building Lambda Functions with C#",
+      "url": "https://docs.aws.amazon.com/lambda/latest/dg/dotnet-programming-model.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-19",
+      "title": "Enable CORS for an API Gateway REST API Resource",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-19",
+      "title": "AWS Lambda for .NET Core",
+      "url": "https://github.com/aws/aws-lambda-dotnet",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-19",
+      "title": "Set Up a Custom Domain Name for an API in API Gateway",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-21",
+      "title": "What Is Amazon DynamoDB?",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-23",
+      "title": "Use API Gateway Lambda Authorizers",
+      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-24",
+      "title": "Auth0: Secure AWS API Gateway Endpoints Using Custom Authorizers",
+      "url": "https://auth0.com/docs/integrations/aws-api-gateway/custom-authorizers",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-09-24",
+      "title": "Auth0: AWS API Gateway Custom Authorizer for RS256 JWTs",
+      "url": "https://github.com/auth0-samples/jwt-rsa-aws-custom-authorizer",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2019-06-01",
+      "title": "AWS Certified Solution Architect - Associate",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+      "tags": ["Cloud dev"]
+    },
+    {
+      "dateAdded": "2020-05-12",
+      "title": "List of free resources for developers",
+      "url": "https://free-for.dev/",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-05-09",
+      "title": "What is Design Systems",
+      "url": "https://dev.to/emmabostian/design-systems-part-i-foundations-45hd",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-05-07",
+      "title": "The LMAX Architecture",
+      "url": "https://martinfowler.com/articles/lmax.html",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-05-07",
+      "title": "GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler",
+      "url": "https://www.youtube.com/watch?v=STKCRSUsyP0",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-05-07",
+      "title": "Avoiding Microservice Megadisaster - Jimmy Bogard",
+      "url": "https://www.youtube.com/watch?v=gfh-VCTwMw8",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-05-01",
+      "title": "Extreme Programming",
+      "url": "https://en.wikipedia.org/wiki/Extreme_programming",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-04-19",
+      "title": "It's Not Just Standing Up: Patterns for Daily Standup Meetings",
+      "url": "https://martinfowler.com/articles/itsNotJustStandingUp.html",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-03",
+      "title": "Micro-Fontends Architecture",
+      "url": "https://martinfowler.com/articles/micro-frontends.html",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-03",
+      "title": "Wikipedia - Aspect-oriented programming",
+      "url": "https://en.wikipedia.org/wiki/Aspect-oriented_programming",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-06",
+      "title": "Categorise Unsolved Problems in Agile Development: Premature & Foreseeable",
+      "url": "https://www.infoq.com/articles/unsolved-problems-foreseeable/",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-10",
+      "title": "Test Pyramid",
+      "url": "https://martinfowler.com/bliki/TestPyramid.html",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-10",
+      "title": "Just Say No to More End-to-End Tests",
+      "url": "https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-17",
+      "title": "How to Write a Git Commit Message",
+      "url": "https://chris.beams.io/posts/git-commit/",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-20",
+      "title": "Erik Meijer: Rx in 15 Minutes - Rx is Here!!!!!",
+      "url": "https://channel9.msdn.com/Blogs/Charles/Erik-Meijer-Rx-in-15-Minutes",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-11-21",
+      "title": "ReactiveX - An API for asynchronous programming with observable streams",
+      "url": "http://reactivex.io/",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-10-05",
+      "title": "Identity 101: How username password got so complicated",
+      "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-10-16",
+      "title": "Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3",
+      "url": "https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-10-17",
+      "title": "Glyph/Hex code for Material Icon",
+      "url": "https://github.com/google/material-design-icons/blob/master/iconfont/codepoints",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2019-10-20",
+      "title": "Characters, Symbols and the Unicode Miracle - Computerphile",
+      "url": "https://www.youtube.com/watch?v=MijmeoH9LT4",
+      "tags": ["Software dev"]
+    },
+    {
+      "dateAdded": "2020-05-01",
+      "title": "Android - Show biometric authentication dialog",
+      "url": "https://developer.android.com/training/sign-in/biometric-auth",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2020-01-02",
+      "title": "Xamarin.Forms Reusable Controls",
+      "url": "https://redpillxamarin.com/2017/01/28/206-reusable-controls/",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2020-01-08",
+      "title": "Xamarin.Forms: How to Clip Images with Rounded Corners",
+      "url": "https://montemagno.com/xamarin-forms-how-to-clip-images-with-rounded-corners/",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2020-01-11",
+      "title": "React Native tutorial",
+      "url": "https://facebook.github.io/react-native/docs/tutorial",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2020-01-15",
+      "title": "Android Bluetooth API",
+      "url": "https://developer.android.com/guide/topics/connectivity/bluetooth",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2020-01-15",
+      "title": "What's UUID in Bluetooth?",
+      "url": "https://stackoverflow.com/questions/13964342/android-how-do-bluetooth-uuids-work",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2020-01-15",
+      "title": "Connect a barcode reader to a Xamarin Forms app via Bluetooth",
+      "url": "https://acaliaro.wordpress.com/2017/02/07/connect-a-barcode-reader-to-a-xamarin-forms-app-via-bluetooth/",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-12-31",
+      "title": "Xamarin.Forms OnPlatform Extension",
+      "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/consuming#onplatform-markup-extension",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-12-31",
+      "title": "Xamarin.Forms RelativeBinding",
+      "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/relative-bindings",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-12-31",
+      "title": "Xamarin.Forms.DebugRainbows",
+      "url": "https://github.com/sthewissen/Xamarin.Forms.DebugRainbows",
+      "notes": "Helps to debug UI alignment issues. Can be used for Views too.",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-11-17",
+      "title": "Simplify HTTP in Mobile Apps with Refit",
+      "url": "https://www.youtube.com/watch?v=IUP0XFs6XRI",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-11-17",
+      "title": "ReactiveUI with Xamarin - Michael Stonis & Geoffrey Huntley - Xamarin University Guest Lecture",
+      "url": "https://www.youtube.com/watch?v=vydDJ9CaIug",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-10-21",
+      "title": "Android Developers - Adaptive icons",
+      "url": "https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-10-21",
+      "title": "Understanding Android Adaptive Icons",
+      "url": "https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-10-23",
+      "title": "Three things you probably didn’t know about XAML converters #2: Passing parameters to ValueConverters",
+      "url": "http://www.mobilemotion.eu/?p=657",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-13",
+      "title": "Using private CA certificate on iOS & Android",
+      "url": "https://support.apple.com/en-nz/HT204477",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-13",
+      "title": "Using private CA certificate on iOS",
+      "url": "https://support.google.com/pixelphone/answer/2844832?hl=en",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-13",
+      "title": "Using private CA certificate on Android",
+      "url": "https://support.google.com/pixelphone/answer/2844832?hl=en",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-25",
+      "title": "Xamarin Forms: Navigation Page with custom color, font & logo",
+      "url": "https://github.com/jsuarezruiz/xamarin-forms-customnavigationpage",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-25",
+      "title": "Xamarin Android: Change navigation bar button color",
+      "url": "https://forums.xamarin.com/discussion/103317/change-navigation-bar-back-button-color-in-xamarin-android",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-25",
+      "title": "Android: Theming with AppCompat",
+      "url": "https://medium.com/androiddevelopers/theming-with-appcompat-1a292b754b35",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-25",
+      "title": "Xamarin Android: Material Theme",
+      "url": "https://docs.microsoft.com/en-us/xamarin/android/user-interface/material-theme",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-25",
+      "title": "Xamarin Forms: Compiled Binding",
+      "url": "https://docs.microsoft.com/en-gb/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings",
+      "tags": ["Mobile dev"]
+    },
+    {
+      "dateAdded": "2019-09-25",
+      "title": "Xamarin Android: D8 & R8 Shrinker",
+      "url": "https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/",
+      "tags": ["Mobile dev"]
+    }
+  ]
 }
