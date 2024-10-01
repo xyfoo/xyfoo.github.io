@@ -93,7 +93,7 @@ title: Stuffs
 
             onMounted(async () => {
                 try {
-                    let useMockData = true;
+                    let useMockData = false;
                     state.isLoading = true;
                     if (useMockData == false) {
                         const response = await fetch(dataUrl);
