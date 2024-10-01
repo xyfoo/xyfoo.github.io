@@ -1,942 +1,1001 @@
 {
-  "lastUpdated": "2024-09-30",
-  "data": [
-    {
-      "dateAdded": "2020-02-09",
-      "title": "Philly goes to zoo: A kurbenetes story",
-      "url": "https://www.cncf.io/phippy-goes-to-the-zoo-book",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2020-02-09",
-      "title": "The Illustrated Children’s Guide to Kubernetes",
-      "url": "https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-10-03",
-      "title": "Getting Started with the DynamoDB SDK - .NET",
-      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.NET.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "DynamoDB - .NET: Object Persistence Model",
-      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-10-09",
-      "title": "Working with Scans in DynamoDB",
-      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-10-09",
-      "title": "Best Practices for Querying and Scanning Data in DynamoDB",
-      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-02",
-      "title": "Hosting a static webpage on AWS S3",
-      "url": "https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-10",
-      "title": "Simple site hosting with S3 & HTTPS",
-      "url": "https://www.freecodecamp.org/news/simple-site-hosting-with-amazon-s3-and-https-5e78017f482a/",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "Handling Vue Router 'history' mode in AWS S3 static website hosting & CloudFront",
-      "url": "https://stackoverflow.com/a/47554827",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-18",
-      "title": "Intro to Azure CLI",
-      "url": "https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-18",
-      "title": "Azure CLI VM commands",
-      "url": "https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-18",
-      "title": "What is AWS API Gateway",
-      "url": "https://docs.aws.amazon.com/en_pv/apigateway/latest/developerguide/welcome",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Creating, Deploying, and Invoking a REST API in Amazon API Gateway",
-      "url": "https://docs.aws.amazon.com/en_pv/apigateway/latest/developerguide/apigateway-rest-api",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Building Lambda Functions with C#",
-      "url": "https://docs.aws.amazon.com/lambda/latest/dg/dotnet-programming-model.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Enable CORS for an API Gateway REST API Resource",
-      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "AWS Lambda for .NET Core",
-      "url": "https://github.com/aws/aws-lambda-dotnet",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Set Up a Custom Domain Name for an API in API Gateway",
-      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-21",
-      "title": "What Is Amazon DynamoDB?",
-      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-23",
-      "title": "Use API Gateway Lambda Authorizers",
-      "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-24",
-      "title": "Auth0: Secure AWS API Gateway Endpoints Using Custom Authorizers",
-      "url": "https://auth0.com/docs/integrations/aws-api-gateway/custom-authorizers",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-09-24",
-      "title": "Auth0: AWS API Gateway Custom Authorizer for RS256 JWTs",
-      "url": "https://github.com/auth0-samples/jwt-rsa-aws-custom-authorizer",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2019-06-01",
-      "title": "AWS Certified Solution Architect - Associate",
-      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
-      "tags": ["Cloud dev"]
-    },
-    {
-      "dateAdded": "2020-05-12",
-      "title": "List of free resources for developers",
-      "url": "https://free-for.dev/",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-05-09",
-      "title": "What is Design Systems",
-      "url": "https://dev.to/emmabostian/design-systems-part-i-foundations-45hd",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-05-07",
-      "title": "The LMAX Architecture",
-      "url": "https://martinfowler.com/articles/lmax.html",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-05-07",
-      "title": "GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler",
-      "url": "https://www.youtube.com/watch?v=STKCRSUsyP0",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-05-07",
-      "title": "Avoiding Microservice Megadisaster - Jimmy Bogard",
-      "url": "https://www.youtube.com/watch?v=gfh-VCTwMw8",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-05-01",
-      "title": "Extreme Programming",
-      "url": "https://en.wikipedia.org/wiki/Extreme_programming",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-04-19",
-      "title": "It's Not Just Standing Up: Patterns for Daily Standup Meetings",
-      "url": "https://martinfowler.com/articles/itsNotJustStandingUp.html",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": "Micro-Fontends Architecture",
-      "url": "https://martinfowler.com/articles/micro-frontends.html",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": "Wikipedia - Aspect-oriented programming",
-      "url": "https://en.wikipedia.org/wiki/Aspect-oriented_programming",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-06",
-      "title": "Categorise Unsolved Problems in Agile Development: Premature & Foreseeable",
-      "url": "https://www.infoq.com/articles/unsolved-problems-foreseeable/",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-10",
-      "title": "Test Pyramid",
-      "url": "https://martinfowler.com/bliki/TestPyramid.html",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-10",
-      "title": "Just Say No to More End-to-End Tests",
-      "url": "https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-17",
-      "title": "How to Write a Git Commit Message",
-      "url": "https://chris.beams.io/posts/git-commit/",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-20",
-      "title": "Erik Meijer: Rx in 15 Minutes - Rx is Here!!!!!",
-      "url": "https://channel9.msdn.com/Blogs/Charles/Erik-Meijer-Rx-in-15-Minutes",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-11-21",
-      "title": "ReactiveX - An API for asynchronous programming with observable streams",
-      "url": "http://reactivex.io/",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Identity 101: How username password got so complicated",
-      "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-10-16",
-      "title": "Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3",
-      "url": "https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-10-17",
-      "title": "Glyph/Hex code for Material Icon",
-      "url": "https://github.com/google/material-design-icons/blob/master/iconfont/codepoints",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2019-10-20",
-      "title": "Characters, Symbols and the Unicode Miracle - Computerphile",
-      "url": "https://www.youtube.com/watch?v=MijmeoH9LT4",
-      "tags": ["Software dev"]
-    },
-    {
-      "dateAdded": "2020-05-01",
-      "title": "Android - Show biometric authentication dialog",
-      "url": "https://developer.android.com/training/sign-in/biometric-auth",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-01-02",
-      "title": "Xamarin.Forms Reusable Controls",
-      "url": "https://redpillxamarin.com/2017/01/28/206-reusable-controls/",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-01-08",
-      "title": "Xamarin.Forms: How to Clip Images with Rounded Corners",
-      "url": "https://montemagno.com/xamarin-forms-how-to-clip-images-with-rounded-corners/",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-01-11",
-      "title": "React Native tutorial",
-      "url": "https://facebook.github.io/react-native/docs/tutorial",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-01-15",
-      "title": "Android Bluetooth API",
-      "url": "https://developer.android.com/guide/topics/connectivity/bluetooth",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-01-15",
-      "title": "What's UUID in Bluetooth?",
-      "url": "https://stackoverflow.com/questions/13964342/android-how-do-bluetooth-uuids-work",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-01-15",
-      "title": "Connect a barcode reader to a Xamarin Forms app via Bluetooth",
-      "url": "https://acaliaro.wordpress.com/2017/02/07/connect-a-barcode-reader-to-a-xamarin-forms-app-via-bluetooth/",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-12-31",
-      "title": "Xamarin.Forms OnPlatform Extension",
-      "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/consuming#onplatform-markup-extension",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-12-31",
-      "title": "Xamarin.Forms RelativeBinding",
-      "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/relative-bindings",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-12-31",
-      "title": "Xamarin.Forms.DebugRainbows",
-      "url": "https://github.com/sthewissen/Xamarin.Forms.DebugRainbows",
-      "notes": "Helps to debug UI alignment issues. Can be used for Views too.",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-11-17",
-      "title": "Simplify HTTP in Mobile Apps with Refit",
-      "url": "https://www.youtube.com/watch?v=IUP0XFs6XRI",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-11-17",
-      "title": "ReactiveUI with Xamarin - Michael Stonis & Geoffrey Huntley - Xamarin University Guest Lecture",
-      "url": "https://www.youtube.com/watch?v=vydDJ9CaIug",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-10-21",
-      "title": "Android Developers - Adaptive icons",
-      "url": "https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-10-21",
-      "title": "Understanding Android Adaptive Icons",
-      "url": "https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-10-23",
-      "title": "Three things you probably didn’t know about XAML converters #2: Passing parameters to ValueConverters",
-      "url": "http://www.mobilemotion.eu/?p=657",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-13",
-      "title": "Using private CA certificate on iOS & Android",
-      "url": "https://support.apple.com/en-nz/HT204477",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-13",
-      "title": "Using private CA certificate on iOS",
-      "url": "https://support.google.com/pixelphone/answer/2844832?hl=en",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-13",
-      "title": "Using private CA certificate on Android",
-      "url": "https://support.google.com/pixelphone/answer/2844832?hl=en",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-25",
-      "title": "Xamarin Forms: Navigation Page with custom color, font & logo",
-      "url": "https://github.com/jsuarezruiz/xamarin-forms-customnavigationpage",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-25",
-      "title": "Xamarin Android: Change navigation bar button color",
-      "url": "https://forums.xamarin.com/discussion/103317/change-navigation-bar-back-button-color-in-xamarin-android",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-25",
-      "title": "Android: Theming with AppCompat",
-      "url": "https://medium.com/androiddevelopers/theming-with-appcompat-1a292b754b35",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-25",
-      "title": "Xamarin Android: Material Theme",
-      "url": "https://docs.microsoft.com/en-us/xamarin/android/user-interface/material-theme",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-25",
-      "title": "Xamarin Forms: Compiled Binding",
-      "url": "https://docs.microsoft.com/en-gb/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2019-09-25",
-      "title": "Xamarin Android: D8 & R8 Shrinker",
-      "url": "https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/",
-      "tags": ["Mobile dev"]
-    },
-    {
-      "dateAdded": "2020-12-16",
-      "title": "Customize your .NET build - Sharing properties across projects",
-      "url": "https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-11-05",
-      "title": ".NET Core source explorer",
-      "url": "https://source.dot.net/",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-11-01",
-      "title": "Dotnet Runtime Coding Style",
-      "url": "https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/coding-style.md",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-06-05",
-      "title": "Dependency injection into views in ASP.NET Core",
-      "url": "https://docs.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-05-17",
-      "title": "Building a Secure ASP.NET Core Web API with Azure AD B2C",
-      "url": "http://www.techbubbles.com/aspnet/building-a-secure-asp-net-core-web-api/",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-05-17",
-      "title": "Microsoft Security Authentication Library (MSAL.NET) - Scenario",
-      "url": "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-02-26",
-      "title": "ASP.NET MVC bundling & minification",
-      "url": "https://docs.microsoft.com/en-us/aspnet/mvc/overview/performance/bundling-and-minification",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-02-18",
-      "title": "Web.config transformation",
-      "url": "https://blog.elmah.io/web-config-transformations-the-definitive-syntax-guide/",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-01-13",
-      "title": "AutoMapper Type Converter - take complete control over the conversion of one type to another",
-      "url": "http://docs.automapper.org/en/stable/Custom-type-converters.html",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-01-13",
-      "title": "AutoMapper Custom Value Resolver",
-      "url": "https://docs.automapper.org/en/stable/Custom-value-resolvers.html",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-01-14",
-      "title": "Stream Class",
-      "url": "https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netframework-4.8",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-12-10",
-      "title": "Shortcut keys for running tests in Visual Studio",
-      "url": "http://blog.wibeck.org/2014/02/shortcut-keys-for-running-tests-in-visual-studio/",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-02",
-      "title": ".NET IL Weaving for those who know nothing about .NET IL Weaving",
-      "url": "https://medium.com/@heytherewill/net-il-weaving-for-those-who-know-nothing-about-net-il-weaving-c0f7e461ef47",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-02",
-      "title": "The pocket guide to metaprogramming in .NET",
-      "url": "https://medium.com/@heytherewill/the-pocket-guide-to-metaprogramming-in-net-31aaee5b3855",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-02",
-      "title": "MSIL Injection",
-      "url": "https://www.postsharp.net/aop.net/msil-injection",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-02",
-      "title": "Fody - Extensible tool for weaving .net assemblies",
-      "url": "https://github.com/Fody/Home",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": "Micro-Fontends Architecture",
-      "url": "https://martinfowler.com/articles/micro-frontends.html",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": "Wikipedia - Aspect-oriented programming",
-      "url": "https://en.wikipedia.org/wiki/Aspect-oriented_programming",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": "PostSharp - What is Aspect-oriented programming (AOP)",
-      "url": "https://www.postsharp.net/aop.net",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": ".NET Compile-time weaving",
-      "url": "https://www.postsharp.net/aop.net/compiletime-weaving",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": ".NET Run-Time weaving",
-      "url": "https://www.postsharp.net/aop.net/runtime-weaving",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-03",
-      "title": "Refit: The automatic type-safe REST library for .NET Core, Xamarin and .NET",
-      "url": "https://github.com/reactiveui/refit",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-12",
-      "title": "AutoMapper - Flattening",
-      "url": "https://automapper.readthedocs.io/en/latest/Flattening.html",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-20",
-      "title": "C# Enum Design",
-      "url": "https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/enum",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-20",
-      "title": ".NET Observer Design Pattern",
-      "url": "https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-11-21",
-      "title": "The Reactive Extensions for .NET",
-      "url": "https://github.com/dotnet/reactive",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-03",
-      "title": "Getting Started with the DynamoDB SDK - .NET",
-      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.NET.html",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Identity 101: How username password got so complicated",
-      "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Mario Kart with CSS - Slides",
-      "url": "https://stephencook.dev/slides/mario-kart-css-talk/#/0/0",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Mario Kart with CSS - Codes",
-      "url": "https://codesandbox.io/s/zk15o120xl",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Mario Kart with CSS - Blogpost",
-      "url": "https://codeburst.io/mario-kart-css-7572bd2ce608",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-09",
-      "title": "Overview of source code analysis in Visual Studio",
-      "url": "https://docs.microsoft.com/en-gb/visualstudio/code-quality/roslyn-analyzers-overview",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-16",
-      "title": ".NET client for the Auth0 Authentication & Management APIs",
-      "url": "https://github.com/auth0/auth0.net",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-21",
-      "title": "What's new in ASP.NET Core 3.0",
-      "url": "https://docs.microsoft.com/en-gb/aspnet/core/release-notes/aspnetcore-3.0?view=aspnetcore-3.0",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-10-21",
-      "title": "Blazor Server in .NET Core 3.0 scenarios and performance",
-      "url": "https://devblogs.microsoft.com/aspnet/blazor-server-in-net-core-3-0-scenarios-and-performance/",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Create portable, custom editor settings with EditorConfig",
-      "url": "https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-09-24",
-      "title": "Manually validating RS256 JWT in .NET",
-      "url": "https://www.jerriepelser.com/blog/manually-validating-rs256-jwt-dotnet/",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2019-09-24",
-      "title": "IdentityServer4: Validate JWT token",
-      "url": "https://github.com/IdentityServer/IdentityServer4/blob/master/samples/Clients/src/MvcManual/Controllers/HomeController.cs#L148",
-      "tags": [".NET"]
-    },
-    {
-      "dateAdded": "2020-07-30",
-      "title": "Modern JavaScript Explained For Dinosaurs",
-      "url": "https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-06-11",
-      "title": "Webpack - Guides - Getting Started",
-      "url": "https://webpack.js.org/guides/getting-started/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-06-05",
-      "title": "Creating and triggering events",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-06-04",
-      "title": "History API",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/History_API",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-06-04",
-      "title": "Working with the History API",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-06-01",
-      "title": "WindowEventHandlers.onbeforeunload",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-06-01",
-      "title": "Window: popstate event",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-05-29",
-      "title": "Element.scrollHeight",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-05-29",
-      "title": "CSS clamp()",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-05-15",
-      "title": "Making the Move from jQuery to Vue",
-      "url": "https://css-tricks.com/making-the-move-from-jquery-to-vue/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-27",
-      "title": "Eloquent JavaScript",
-      "url": "https://eloquentjavascript.net/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-27",
-      "title": "Intro to Vue.JS - Animation",
-      "url": "https://css-tricks.com/intro-to-vue-5-animations/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-25",
-      "title": "A Complete Guide to Grid",
-      "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-11",
-      "title": "Mostly adequate guide to Functional Programming (in javascript)",
-      "url": "https://github.com/MostlyAdequate/mostly-adequate-guide",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-04",
-      "title": "Mastering developer tools console in web browsers",
-      "url": "https://blog.teamtreehouse.com/mastering-developer-tools-console",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-03",
-      "title": "CSS length units",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/length",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-04-01",
-      "title": "You don't know JS (1st edition) - A book series on JavaScript",
-      "url": "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-03-24",
-      "title": "Styling webkit-based browser's scrollbar with CSS",
-      "url": "https://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-03-13",
-      "title": "pseudo-element",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-03-13",
-      "title": "pseudo-class",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-03-12",
-      "title": "Style Placeholder Text with vendor-specific-prefix & without using HTML5 ::placeholder pseudo",
-      "url": "https://css-tricks.com/snippets/css/style-placeholder-text/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-03-12",
-      "title": "webkit-input-placeholder does not work",
-      "url": "https://stackoverflow.com/questions/27959846/webkit-input-placeholder-does-not-work",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-03-03",
-      "title": "BEM (CSS Naming) 101",
-      "url": "https://css-tricks.com/bem-101/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-02-19",
-      "title": "Knockout JS: Helping you build dynamic JavaScript UIs with MVVM and ASP.NET",
-      "url": "https://channel9.msdn.com/Events/MIX/MIX11/FRM08",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2020-02-19",
-      "title": "Introduction to Knockout",
-      "url": "https://knockoutjs.com/documentation/introduction.html",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Identity 101: How username password got so complicated",
-      "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Mario Kart with CSS - Slides",
-      "url": "https://stephencook.dev/slides/mario-kart-css-talk/#/0/0",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Mario Kart with CSS - Codes",
-      "url": "https://codesandbox.io/s/zk15o120xl",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-05",
-      "title": "Mario Kart with CSS - Blogpost",
-      "url": "https://codeburst.io/mario-kart-css-7572bd2ce608",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-15",
-      "title": "Auth0 Architecture Scenario - SPA + API",
-      "url": "https://auth0.com/docs/architecture-scenarios/spa-api",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-15",
-      "title": "Why You Should Always Use Access Tokens to Secure APIs",
-      "url": "https://auth0.com/docs/api-auth/why-use-access-tokens-to-secure-apis",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-10-16",
-      "title": "Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3",
-      "url": "https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-01",
-      "title": "Sarah Drasner on Let’s Write A Vue App From Scratch",
-      "url": "https://vimeo.com/348717993",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-02",
-      "title": "What is Vuex",
-      "url": "https://vuex.vuejs.org/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-02",
-      "title": "What is Vue Router",
-      "url": "https://router.vuejs.org/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-02",
-      "title": "Hosting a static webpage on AWS S3",
-      "url": "https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-05",
-      "title": "What is Nuxt.js",
-      "url": "https://nuxtjs.org/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-11",
-      "title": "What is Vue CLI",
-      "url": "https://cli.vuejs.org/guide/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-11",
-      "title": "Vue module system component registration",
-      "url": "https://vuejs.org/v2/guide/components-registration.html#Module-Systems",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "What is JavaScript module",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "JS import syntax",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "JS export syntax",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "What is webpack",
-      "url": "https://webpack.js.org/concepts/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "VueJS SPA login with Auth0",
-      "url": "https://auth0.com/docs/quickstart/spa/vuejs",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "What is required()",
-      "url": "https://nodejs.org/en/knowledge/getting-started/what-is-require/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "LocalStorage vs Cookie",
-      "url": "https://stackoverflow.com/questions/3220660/local-storage-vs-cookies",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "Vue CLI server with HTTPS",
-      "url": "https://forum.vuejs.org/t/vue-cli-serve-with-https/39359",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-12",
-      "title": "Handling Vue Router 'history' mode in AWS S3 static website hosting & CloudFront",
-      "url": "https://stackoverflow.com/a/47554827",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-13",
-      "title": "THE PAST, PRESENT & FUTURE OF LOCAL STORAGE FOR WEB APPLICATIONS",
-      "url": "http://diveintohtml5.info/storage.html",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-17",
-      "title": "ES modules: A cartoon deep dive",
-      "url": "https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Cross-Origin Resource Sharing (CORS)",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-19",
-      "title": "Server-Side Access Control (CORS)",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Server-Side_Access_Control",
-      "tags": ["Web dev"]
-    },
-    {
-      "dateAdded": "2019-09-24",
-      "title": "Navigating RS256 and JWKS",
-      "url": "https://auth0.com/blog/navigating-rs256-and-jwks/",
-      "tags": ["Web dev"]
-    }
-  ]
+    "lastUpdated": "2024-10-01",
+    "data": [
+        {
+            "dateAdded": "2024-10-01",
+            "title": "18x2 Beyond Youthful Days (2024)",
+            "url": "https://en.wikipedia.org/wiki/18%C3%972_Beyond_Youthful_Days",
+            "notes": "A Taiwanese man on a solo trip to Japan, reminiscing abut a past romantic entanglement that never blossomed into a relationship.",
+            "tags": ["Film"],
+            "see": [
+                {
+                    "title": "Netflix",
+                    "url": "https://www.netflix.com/title/81780831"
+                },
+                {
+                    "title": "Soundtrack @ Spotify",
+                    "url": "https://open.spotify.com/album/0HthexMruDDEqiZkBMKUOE"
+                },
+                {
+                    "title": "記憶の旅人 (Credit song)",
+                    "url": "https://open.spotify.com/track/73CzgRQHcMiVlC7EZjzjyr"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2024-10-01",
+            "title": "Love Letter (1995)",
+            "url": "https://en.wikipedia.org/wiki/Love_Letter_(1995_film)",
+            "notes": "Story of a woman discovers the profound connections that can transcend time and loss through series of letter.",
+            "tags": ["Film", "Japanese Film"],
+            "see": [
+                {
+                    "title": "Internet Archive",
+                    "url": "https://archive.org/details/love.-letter.-1995"
+                },
+                {
+                    "title": "Youtube",
+                    "url": "https://youtu.be/wNZSguZzkzI"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2024-10-01",
+            "title": "16個夏天 The Way We Were (2014)",
+            "url": "https://en.wikipedia.org/wiki/The_Way_We_Were_(2014_TV_series)",
+            "notes": "A bittersweet romance drama, about story of 5 person who meet during college years.",
+            "tags": ["Drama", "Taiwanese drama"],
+            "see": [
+                {
+                    "title": "Netflix",
+                    "url": "https://www.netflix.com/title/81588964"
+                },
+                {
+                    "title": "Youtube",
+                    "url": "https://youtube.com/playlist?list=PLyHieqImaj4y88WwH8OLa3oHxadzh-8J7"
+                },
+                {
+                    "title": "Soundtrack @ Spotify",
+                    "url": "https://open.spotify.com/album/3VtKQNZ7tgY5N4qRzdIPKI"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2020-02-09",
+            "title": "Philly goes to zoo: A kurbenetes story",
+            "url": "https://www.cncf.io/phippy-goes-to-the-zoo-book",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2020-02-09",
+            "title": "The Illustrated Children’s Guide to Kubernetes",
+            "url": "https://www.cncf.io/the-childrens-illustrated-guide-to-kubernetes/",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-10-03",
+            "title": "Getting Started with the DynamoDB SDK - .NET",
+            "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.NET.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "DynamoDB - .NET: Object Persistence Model",
+            "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-10-09",
+            "title": "Working with Scans in DynamoDB",
+            "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-10-09",
+            "title": "Best Practices for Querying and Scanning Data in DynamoDB",
+            "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-02",
+            "title": "Hosting a static webpage on AWS S3",
+            "url": "https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-10",
+            "title": "Simple site hosting with S3 & HTTPS",
+            "url": "https://www.freecodecamp.org/news/simple-site-hosting-with-amazon-s3-and-https-5e78017f482a/",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "Handling Vue Router 'history' mode in AWS S3 static website hosting & CloudFront",
+            "url": "https://stackoverflow.com/a/47554827",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-18",
+            "title": "Intro to Azure CLI",
+            "url": "https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-18",
+            "title": "Azure CLI VM commands",
+            "url": "https://docs.microsoft.com/en-us/cli/azure/vm?view=azure-cli-latest",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-18",
+            "title": "What is AWS API Gateway",
+            "url": "https://docs.aws.amazon.com/en_pv/apigateway/latest/developerguide/welcome",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Creating, Deploying, and Invoking a REST API in Amazon API Gateway",
+            "url": "https://docs.aws.amazon.com/en_pv/apigateway/latest/developerguide/apigateway-rest-api",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Building Lambda Functions with C#",
+            "url": "https://docs.aws.amazon.com/lambda/latest/dg/dotnet-programming-model.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Enable CORS for an API Gateway REST API Resource",
+            "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "AWS Lambda for .NET Core",
+            "url": "https://github.com/aws/aws-lambda-dotnet",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Set Up a Custom Domain Name for an API in API Gateway",
+            "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-21",
+            "title": "What Is Amazon DynamoDB?",
+            "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-23",
+            "title": "Use API Gateway Lambda Authorizers",
+            "url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-use-lambda-authorizer.html",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-24",
+            "title": "Auth0: Secure AWS API Gateway Endpoints Using Custom Authorizers",
+            "url": "https://auth0.com/docs/integrations/aws-api-gateway/custom-authorizers",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-09-24",
+            "title": "Auth0: AWS API Gateway Custom Authorizer for RS256 JWTs",
+            "url": "https://github.com/auth0-samples/jwt-rsa-aws-custom-authorizer",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2019-06-01",
+            "title": "AWS Certified Solution Architect - Associate",
+            "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/",
+            "tags": ["Cloud dev"]
+        },
+        {
+            "dateAdded": "2020-05-12",
+            "title": "List of free resources for developers",
+            "url": "https://free-for.dev/",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-05-09",
+            "title": "What is Design Systems",
+            "url": "https://dev.to/emmabostian/design-systems-part-i-foundations-45hd",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-05-07",
+            "title": "The LMAX Architecture",
+            "url": "https://martinfowler.com/articles/lmax.html",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-05-07",
+            "title": "GOTO 2017 • The Many Meanings of Event-Driven Architecture • Martin Fowler",
+            "url": "https://www.youtube.com/watch?v=STKCRSUsyP0",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-05-07",
+            "title": "Avoiding Microservice Megadisaster - Jimmy Bogard",
+            "url": "https://www.youtube.com/watch?v=gfh-VCTwMw8",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-05-01",
+            "title": "Extreme Programming",
+            "url": "https://en.wikipedia.org/wiki/Extreme_programming",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-04-19",
+            "title": "It's Not Just Standing Up: Patterns for Daily Standup Meetings",
+            "url": "https://martinfowler.com/articles/itsNotJustStandingUp.html",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": "Micro-Fontends Architecture",
+            "url": "https://martinfowler.com/articles/micro-frontends.html",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": "Wikipedia - Aspect-oriented programming",
+            "url": "https://en.wikipedia.org/wiki/Aspect-oriented_programming",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-06",
+            "title": "Categorise Unsolved Problems in Agile Development: Premature & Foreseeable",
+            "url": "https://www.infoq.com/articles/unsolved-problems-foreseeable/",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-10",
+            "title": "Test Pyramid",
+            "url": "https://martinfowler.com/bliki/TestPyramid.html",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-10",
+            "title": "Just Say No to More End-to-End Tests",
+            "url": "https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-17",
+            "title": "How to Write a Git Commit Message",
+            "url": "https://chris.beams.io/posts/git-commit/",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-20",
+            "title": "Erik Meijer: Rx in 15 Minutes - Rx is Here!!!!!",
+            "url": "https://channel9.msdn.com/Blogs/Charles/Erik-Meijer-Rx-in-15-Minutes",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-11-21",
+            "title": "ReactiveX - An API for asynchronous programming with observable streams",
+            "url": "http://reactivex.io/",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Identity 101: How username password got so complicated",
+            "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-10-16",
+            "title": "Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3",
+            "url": "https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-10-17",
+            "title": "Glyph/Hex code for Material Icon",
+            "url": "https://github.com/google/material-design-icons/blob/master/iconfont/codepoints",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2019-10-20",
+            "title": "Characters, Symbols and the Unicode Miracle - Computerphile",
+            "url": "https://www.youtube.com/watch?v=MijmeoH9LT4",
+            "tags": ["Software dev"]
+        },
+        {
+            "dateAdded": "2020-05-01",
+            "title": "Android - Show biometric authentication dialog",
+            "url": "https://developer.android.com/training/sign-in/biometric-auth",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-01-02",
+            "title": "Xamarin.Forms Reusable Controls",
+            "url": "https://redpillxamarin.com/2017/01/28/206-reusable-controls/",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-01-08",
+            "title": "Xamarin.Forms: How to Clip Images with Rounded Corners",
+            "url": "https://montemagno.com/xamarin-forms-how-to-clip-images-with-rounded-corners/",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-01-11",
+            "title": "React Native tutorial",
+            "url": "https://facebook.github.io/react-native/docs/tutorial",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-01-15",
+            "title": "Android Bluetooth API",
+            "url": "https://developer.android.com/guide/topics/connectivity/bluetooth",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-01-15",
+            "title": "What's UUID in Bluetooth?",
+            "url": "https://stackoverflow.com/questions/13964342/android-how-do-bluetooth-uuids-work",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-01-15",
+            "title": "Connect a barcode reader to a Xamarin Forms app via Bluetooth",
+            "url": "https://acaliaro.wordpress.com/2017/02/07/connect-a-barcode-reader-to-a-xamarin-forms-app-via-bluetooth/",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-12-31",
+            "title": "Xamarin.Forms OnPlatform Extension",
+            "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/markup-extensions/consuming#onplatform-markup-extension",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-12-31",
+            "title": "Xamarin.Forms RelativeBinding",
+            "url": "https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/data-binding/relative-bindings",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-12-31",
+            "title": "Xamarin.Forms.DebugRainbows",
+            "url": "https://github.com/sthewissen/Xamarin.Forms.DebugRainbows",
+            "notes": "Helps to debug UI alignment issues. Can be used for Views too.",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-11-17",
+            "title": "Simplify HTTP in Mobile Apps with Refit",
+            "url": "https://www.youtube.com/watch?v=IUP0XFs6XRI",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-11-17",
+            "title": "ReactiveUI with Xamarin - Michael Stonis & Geoffrey Huntley - Xamarin University Guest Lecture",
+            "url": "https://www.youtube.com/watch?v=vydDJ9CaIug",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-10-21",
+            "title": "Android Developers - Adaptive icons",
+            "url": "https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-10-21",
+            "title": "Understanding Android Adaptive Icons",
+            "url": "https://medium.com/google-design/understanding-android-adaptive-icons-cee8a9de93e2",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-10-23",
+            "title": "Three things you probably didn’t know about XAML converters #2: Passing parameters to ValueConverters",
+            "url": "http://www.mobilemotion.eu/?p=657",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-13",
+            "title": "Using private CA certificate on iOS & Android",
+            "url": "https://support.apple.com/en-nz/HT204477",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-13",
+            "title": "Using private CA certificate on iOS",
+            "url": "https://support.google.com/pixelphone/answer/2844832?hl=en",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-13",
+            "title": "Using private CA certificate on Android",
+            "url": "https://support.google.com/pixelphone/answer/2844832?hl=en",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-25",
+            "title": "Xamarin Forms: Navigation Page with custom color, font & logo",
+            "url": "https://github.com/jsuarezruiz/xamarin-forms-customnavigationpage",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-25",
+            "title": "Xamarin Android: Change navigation bar button color",
+            "url": "https://forums.xamarin.com/discussion/103317/change-navigation-bar-back-button-color-in-xamarin-android",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-25",
+            "title": "Android: Theming with AppCompat",
+            "url": "https://medium.com/androiddevelopers/theming-with-appcompat-1a292b754b35",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-25",
+            "title": "Xamarin Android: Material Theme",
+            "url": "https://docs.microsoft.com/en-us/xamarin/android/user-interface/material-theme",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-25",
+            "title": "Xamarin Forms: Compiled Binding",
+            "url": "https://docs.microsoft.com/en-gb/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2019-09-25",
+            "title": "Xamarin Android: D8 & R8 Shrinker",
+            "url": "https://devblogs.microsoft.com/xamarin/androids-d8-dexer-and-r8-shrinker/",
+            "tags": ["Mobile dev"]
+        },
+        {
+            "dateAdded": "2020-12-16",
+            "title": "Customize your .NET build - Sharing properties across projects",
+            "url": "https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-11-05",
+            "title": ".NET Core source explorer",
+            "url": "https://source.dot.net/",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-11-01",
+            "title": "Dotnet Runtime Coding Style",
+            "url": "https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/coding-style.md",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-06-05",
+            "title": "Dependency injection into views in ASP.NET Core",
+            "url": "https://docs.microsoft.com/en-us/aspnet/core/mvc/views/dependency-injection",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-05-17",
+            "title": "Building a Secure ASP.NET Core Web API with Azure AD B2C",
+            "url": "http://www.techbubbles.com/aspnet/building-a-secure-asp-net-core-web-api/",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-05-17",
+            "title": "Microsoft Security Authentication Library (MSAL.NET) - Scenario",
+            "url": "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/scenarios",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-02-26",
+            "title": "ASP.NET MVC bundling & minification",
+            "url": "https://docs.microsoft.com/en-us/aspnet/mvc/overview/performance/bundling-and-minification",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-02-18",
+            "title": "Web.config transformation",
+            "url": "https://blog.elmah.io/web-config-transformations-the-definitive-syntax-guide/",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-01-13",
+            "title": "AutoMapper Type Converter - take complete control over the conversion of one type to another",
+            "url": "http://docs.automapper.org/en/stable/Custom-type-converters.html",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-01-13",
+            "title": "AutoMapper Custom Value Resolver",
+            "url": "https://docs.automapper.org/en/stable/Custom-value-resolvers.html",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-01-14",
+            "title": "Stream Class",
+            "url": "https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netframework-4.8",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-12-10",
+            "title": "Shortcut keys for running tests in Visual Studio",
+            "url": "http://blog.wibeck.org/2014/02/shortcut-keys-for-running-tests-in-visual-studio/",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-02",
+            "title": ".NET IL Weaving for those who know nothing about .NET IL Weaving",
+            "url": "https://medium.com/@heytherewill/net-il-weaving-for-those-who-know-nothing-about-net-il-weaving-c0f7e461ef47",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-02",
+            "title": "The pocket guide to metaprogramming in .NET",
+            "url": "https://medium.com/@heytherewill/the-pocket-guide-to-metaprogramming-in-net-31aaee5b3855",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-02",
+            "title": "MSIL Injection",
+            "url": "https://www.postsharp.net/aop.net/msil-injection",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-02",
+            "title": "Fody - Extensible tool for weaving .net assemblies",
+            "url": "https://github.com/Fody/Home",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": "Micro-Fontends Architecture",
+            "url": "https://martinfowler.com/articles/micro-frontends.html",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": "Wikipedia - Aspect-oriented programming",
+            "url": "https://en.wikipedia.org/wiki/Aspect-oriented_programming",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": "PostSharp - What is Aspect-oriented programming (AOP)",
+            "url": "https://www.postsharp.net/aop.net",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": ".NET Compile-time weaving",
+            "url": "https://www.postsharp.net/aop.net/compiletime-weaving",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": ".NET Run-Time weaving",
+            "url": "https://www.postsharp.net/aop.net/runtime-weaving",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-03",
+            "title": "Refit: The automatic type-safe REST library for .NET Core, Xamarin and .NET",
+            "url": "https://github.com/reactiveui/refit",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-12",
+            "title": "AutoMapper - Flattening",
+            "url": "https://automapper.readthedocs.io/en/latest/Flattening.html",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-20",
+            "title": "C# Enum Design",
+            "url": "https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/enum",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-20",
+            "title": ".NET Observer Design Pattern",
+            "url": "https://docs.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-11-21",
+            "title": "The Reactive Extensions for .NET",
+            "url": "https://github.com/dotnet/reactive",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-03",
+            "title": "Getting Started with the DynamoDB SDK - .NET",
+            "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.NET.html",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Identity 101: How username password got so complicated",
+            "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Mario Kart with CSS - Slides",
+            "url": "https://stephencook.dev/slides/mario-kart-css-talk/#/0/0",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Mario Kart with CSS - Codes",
+            "url": "https://codesandbox.io/s/zk15o120xl",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Mario Kart with CSS - Blogpost",
+            "url": "https://codeburst.io/mario-kart-css-7572bd2ce608",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-09",
+            "title": "Overview of source code analysis in Visual Studio",
+            "url": "https://docs.microsoft.com/en-gb/visualstudio/code-quality/roslyn-analyzers-overview",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-16",
+            "title": ".NET client for the Auth0 Authentication & Management APIs",
+            "url": "https://github.com/auth0/auth0.net",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-21",
+            "title": "What's new in ASP.NET Core 3.0",
+            "url": "https://docs.microsoft.com/en-gb/aspnet/core/release-notes/aspnetcore-3.0?view=aspnetcore-3.0",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-10-21",
+            "title": "Blazor Server in .NET Core 3.0 scenarios and performance",
+            "url": "https://devblogs.microsoft.com/aspnet/blazor-server-in-net-core-3-0-scenarios-and-performance/",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Create portable, custom editor settings with EditorConfig",
+            "url": "https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-09-24",
+            "title": "Manually validating RS256 JWT in .NET",
+            "url": "https://www.jerriepelser.com/blog/manually-validating-rs256-jwt-dotnet/",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2019-09-24",
+            "title": "IdentityServer4: Validate JWT token",
+            "url": "https://github.com/IdentityServer/IdentityServer4/blob/master/samples/Clients/src/MvcManual/Controllers/HomeController.cs#L148",
+            "tags": [".NET"]
+        },
+        {
+            "dateAdded": "2020-07-30",
+            "title": "Modern JavaScript Explained For Dinosaurs",
+            "url": "https://medium.com/the-node-js-collection/modern-javascript-explained-for-dinosaurs-f695e9747b70",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-06-11",
+            "title": "Webpack - Guides - Getting Started",
+            "url": "https://webpack.js.org/guides/getting-started/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-06-05",
+            "title": "Creating and triggering events",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-06-04",
+            "title": "History API",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/History_API",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-06-04",
+            "title": "Working with the History API",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-06-01",
+            "title": "WindowEventHandlers.onbeforeunload",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-06-01",
+            "title": "Window: popstate event",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-05-29",
+            "title": "Element.scrollHeight",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-05-29",
+            "title": "CSS clamp()",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-05-15",
+            "title": "Making the Move from jQuery to Vue",
+            "url": "https://css-tricks.com/making-the-move-from-jquery-to-vue/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-27",
+            "title": "Eloquent JavaScript",
+            "url": "https://eloquentjavascript.net/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-27",
+            "title": "Intro to Vue.JS - Animation",
+            "url": "https://css-tricks.com/intro-to-vue-5-animations/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-25",
+            "title": "A Complete Guide to Grid",
+            "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-11",
+            "title": "Mostly adequate guide to Functional Programming (in javascript)",
+            "url": "https://github.com/MostlyAdequate/mostly-adequate-guide",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-04",
+            "title": "Mastering developer tools console in web browsers",
+            "url": "https://blog.teamtreehouse.com/mastering-developer-tools-console",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-03",
+            "title": "CSS length units",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/length",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-04-01",
+            "title": "You don't know JS (1st edition) - A book series on JavaScript",
+            "url": "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-03-24",
+            "title": "Styling webkit-based browser's scrollbar with CSS",
+            "url": "https://almaer.com/blog/creating-custom-scrollbars-with-css-how-css-isnt-great-for-every-task",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-03-13",
+            "title": "pseudo-element",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-03-13",
+            "title": "pseudo-class",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-03-12",
+            "title": "Style Placeholder Text with vendor-specific-prefix & without using HTML5 ::placeholder pseudo",
+            "url": "https://css-tricks.com/snippets/css/style-placeholder-text/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-03-12",
+            "title": "webkit-input-placeholder does not work",
+            "url": "https://stackoverflow.com/questions/27959846/webkit-input-placeholder-does-not-work",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-03-03",
+            "title": "BEM (CSS Naming) 101",
+            "url": "https://css-tricks.com/bem-101/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-02-19",
+            "title": "Knockout JS: Helping you build dynamic JavaScript UIs with MVVM and ASP.NET",
+            "url": "https://channel9.msdn.com/Events/MIX/MIX11/FRM08",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2020-02-19",
+            "title": "Introduction to Knockout",
+            "url": "https://knockoutjs.com/documentation/introduction.html",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Identity 101: How username password got so complicated",
+            "url": "https://www.youtube.com/watch?v=ga3u_4B7_Bw",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Mario Kart with CSS - Slides",
+            "url": "https://stephencook.dev/slides/mario-kart-css-talk/#/0/0",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Mario Kart with CSS - Codes",
+            "url": "https://codesandbox.io/s/zk15o120xl",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-05",
+            "title": "Mario Kart with CSS - Blogpost",
+            "url": "https://codeburst.io/mario-kart-css-7572bd2ce608",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-15",
+            "title": "Auth0 Architecture Scenario - SPA + API",
+            "url": "https://auth0.com/docs/architecture-scenarios/spa-api",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-15",
+            "title": "Why You Should Always Use Access Tokens to Secure APIs",
+            "url": "https://auth0.com/docs/api-auth/why-use-access-tokens-to-secure-apis",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-10-16",
+            "title": "Identity, Claims, & Tokens – An OpenID Connect Primer, Part 1 of 3",
+            "url": "https://developer.okta.com/blog/2017/07/25/oidc-primer-part-1",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-01",
+            "title": "Sarah Drasner on Let’s Write A Vue App From Scratch",
+            "url": "https://vimeo.com/348717993",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-02",
+            "title": "What is Vuex",
+            "url": "https://vuex.vuejs.org/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-02",
+            "title": "What is Vue Router",
+            "url": "https://router.vuejs.org/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-02",
+            "title": "Hosting a static webpage on AWS S3",
+            "url": "https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-05",
+            "title": "What is Nuxt.js",
+            "url": "https://nuxtjs.org/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-11",
+            "title": "What is Vue CLI",
+            "url": "https://cli.vuejs.org/guide/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-11",
+            "title": "Vue module system component registration",
+            "url": "https://vuejs.org/v2/guide/components-registration.html#Module-Systems",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "What is JavaScript module",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "JS import syntax",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "JS export syntax",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "What is webpack",
+            "url": "https://webpack.js.org/concepts/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "VueJS SPA login with Auth0",
+            "url": "https://auth0.com/docs/quickstart/spa/vuejs",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "What is required()",
+            "url": "https://nodejs.org/en/knowledge/getting-started/what-is-require/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "LocalStorage vs Cookie",
+            "url": "https://stackoverflow.com/questions/3220660/local-storage-vs-cookies",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "Vue CLI server with HTTPS",
+            "url": "https://forum.vuejs.org/t/vue-cli-serve-with-https/39359",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-12",
+            "title": "Handling Vue Router 'history' mode in AWS S3 static website hosting & CloudFront",
+            "url": "https://stackoverflow.com/a/47554827",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-13",
+            "title": "THE PAST, PRESENT & FUTURE OF LOCAL STORAGE FOR WEB APPLICATIONS",
+            "url": "http://diveintohtml5.info/storage.html",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-17",
+            "title": "ES modules: A cartoon deep dive",
+            "url": "https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Cross-Origin Resource Sharing (CORS)",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-19",
+            "title": "Server-Side Access Control (CORS)",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Server-Side_Access_Control",
+            "tags": ["Web dev"]
+        },
+        {
+            "dateAdded": "2019-09-24",
+            "title": "Navigating RS256 and JWKS",
+            "url": "https://auth0.com/blog/navigating-rs256-and-jwks/",
+            "tags": ["Web dev"]
+        }
+    ]
 }
