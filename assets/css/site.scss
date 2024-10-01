@@ -337,8 +337,12 @@ h3 {
 }
 
 .si {
-  min-width: 20em;
-  max-width: 40em;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  border: 1px solid var(--text-color);
+  padding: 8px 16px;
 }
 
 .si__title {
@@ -347,32 +351,34 @@ h3 {
   display: block;
 }
 
+.si__notes {
+  // padding: 4px 8px;
+  font-size: 0.8em;
+  margin: 16px 0px;
+}
+
 .si__tags {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  margin-bottom: 16px;
+  margin: 16px 0px;
 }
 
 .si__tag {
-  background-color: lightblue;
+  background-color: var(--tag-bg-color);
+  color: var(--tag-text-color);
   border-radius: 4px;
-  padding: 0px 8px;
+  padding: 2px 8px;
   font-size: 0.8em;
 }
 
-.si__notes {
-  padding: 4px 8px;
-  font-size: 0.8em;
-  background: lightgoldenrodyellow;
-  margin: 16px 0px;
-}
 
 .si__related {
   display: flex;
   flex-direction: row;
   gap: 8px;
   margin-top: 24px;
+  font-size: 0.8em;
 }
 
 .si__related-item {
@@ -381,6 +387,7 @@ h3 {
 
 .si__date {
   font-size: 0.6em;
+  margin-top: 16px;
 }
 
 @media (max-width: 720px) {
