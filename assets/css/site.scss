@@ -329,6 +329,10 @@ h3 {
   width: 100%;
 }
 
+.filters__search-term--activated,
+.filters__search-term--activated:focus {
+  background-color: lightyellow;
+}
 .si-container {
   display: flex;
   flex-direction: row;

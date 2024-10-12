@@ -4,9 +4,9 @@ title: Stuffs
 ---
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
 <article class="stuffs container-fluid">
-    <h1>!!! Work in progress !!!</h1>
     <h1>{{ page.title | escape }}</h1>
     <p>Random list of items I found on the web</p>
     <div id="app">
@@ -24,9 +24,20 @@ title: Stuffs
             <p style="text-align: center">loading...</p>
         </div>
         <div class="si-container" v-if="state.isLoading == false">
+            <div class="filters" style="width: 100%">
+                <div class="input-group">
+                    <input
+                        type="text"
+                        placeholder="Search title, notes, url or tag"
+                        class="form-control filters__search-term"
+                        v-model="state.searchTerm"
+                        :class="{'filters__search-term--activated': (state.searchTerm??'').trim().length > 0}"
+                    />
+                </div>
+            </div>
             <div
                 class="si"
-                v-for="d in cp_filteredData"
+                v-for="d in cp_sortedFilteredData"
                 :key="d.uid"
                 :id="'s_' + d.uid"
             >
@@ -47,6 +58,9 @@ title: Stuffs
                 </div>
                 <div class="si__date" v-if="d?.dateAdded">${d.dateAdded}</div>
             </div>
+            <div v-if="cp_sortedFilteredData.length <= 0">
+                No matching items found!
+            </div>
         </div>
     </div>
 </article>
@@ -54,7 +68,7 @@ title: Stuffs
 <script setup>
     const dataUrl = "{{'/assets/data/sharing.json' | absolute_url }}";
 
-    const { createApp, ref, reactive, onMounted, computed } = Vue;
+    const { createApp, ref, reactive, onMounted, computed, watch } = Vue;
 
     function toLocaleStr(input) {
         let dt = DateTime.fromISO(input);
@@ -77,10 +91,12 @@ title: Stuffs
                 isLoading: false,
                 source: {},
                 itemCount: 0,
+                searchTerm: null,
+                filteredData: [],
             });
 
-            const cp_filteredData = computed(() => {
-                return (state?.source?.data ?? []).sort((x, y) => {
+            const cp_sortedFilteredData = computed(() => {
+                return state.filteredData.sort((x, y) => {
                     // descending
                     if (x.ts > y.ts) {
                         return -1;
@@ -91,6 +107,52 @@ title: Stuffs
                     return 0;
                 });
             });
+
+            watch(
+                () => state.searchTerm,
+                async (newValue, oldValue) => {
+                    debouncedSearch();
+                }
+            );
+
+            const debouncedSearch = _.debounce(() => {
+                let internalSearchTerm = (state.searchTerm ?? '')
+                    .trim()
+                    .toLowerCase();
+
+                let filteredData = state?.source?.data ?? [];
+                if (internalSearchTerm == '') {
+                    // no filtering
+                    // do nothing
+                } else {
+                    filteredData = filteredData.filter((item) => {
+                        if (
+                            // title
+                            (item?.title ?? '')
+                                .toLowerCase()
+                                .includes(internalSearchTerm) ||
+                            // notes
+                            (item?.notes ?? '')
+                                .toLowerCase()
+                                .includes(internalSearchTerm) ||
+                            // url
+                            (item?.url ?? '')
+                                .toLowerCase()
+                                .includes(internalSearchTerm) ||
+                            // tags
+                            (item?.tags ?? []).some((t) =>
+                                t.toLowerCase().includes(internalSearchTerm)
+                            ) == true
+                        ) {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    });
+                }
+
+                state.filteredData = filteredData;
+            }, 250);
 
             onMounted(async () => {
                 try {
@@ -177,6 +239,7 @@ title: Stuffs
                         return z;
                     });
                     state.source.data = withUid;
+                    state.filteredData = state.source.data;
                     state.isLoading = false;
                 }
             });
@@ -184,7 +247,8 @@ title: Stuffs
             return {
                 state,
                 getHostname,
-                cp_filteredData,
+                cp_sortedFilteredData,
+                debouncedSearch,
             };
         },
     });
