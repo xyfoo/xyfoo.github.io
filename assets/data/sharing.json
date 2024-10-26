@@ -2,6 +2,91 @@
     "lastUpdated": "2024-10-01",
     "data": [
         {
+            "dateAdded": "2024-10-27",
+            "title": "Chernobyl (2019)",
+            "url": "https://en.wikipedia.org/wiki/Chernobyl_(miniseries)",
+            "notes": "Historical drama television miniseries that revolves around the Chernobyl disaster of 1986 and the cleanup efforts that followed.",
+            "tags": ["Drama", "Historical Drama"],
+            "see": [
+                {
+                    "title": "HBO Max",
+                    "url": "https://www.hbomax.com/series/urn:hbo:series:GXJvkMAU0JIG6gAEAAAIo"
+                },
+                {
+                    "title": "The Chernobyl Podcast",
+                    "url": "https://link.chtbl.com/the-chernobyl-podcast"
+                },
+                {
+                    "title": "Chernobyl disaster",
+                    "url": "https://en.wikipedia.org/wiki/Chernobyl_disaster"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2024-10-27",
+            "title": "House M.D. (2004)",
+            "url": "https://en.wikipedia.org/wiki/House_(TV_series)",
+            "notes": "Dr. Gregory House,a brilliant diagnostician who shows his palpable loathing for his patients with a brutal bedside manner.",
+            "tags": ["Drama", "Medical Drama"],
+            "see": [
+                {
+                    "title": "Netflix",
+                    "url": "https://www.netflix.com/watch/70136117"
+                },
+                {
+                    "title": "Amazon Prime Video",
+                    "url": "https://www.primevideo.com/dp/amzn1.dv.gti.0eafceb3-9e8a-abf0-f8f4-801cd0009e35"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2024-10-27",
+            "title": "How I Met Your Mother (2021)",
+            "url": "https://en.wikipedia.org/wiki/How_I_Met_Your_Mother",
+            "notes": "Ted's epic search for his soul mate is told largely through flashbacks, as an adult Ted recounts to his kids how he met their mother",
+            "tags": ["Drama", "Comedy"],
+            "see": [
+                {
+                    "title": "Netflix",
+                    "url": "https://www.netflix.com/title/70143824"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2024-10-27",
+            "title": "華燈初上 Light the Night (2021)",
+            "url": "https://en.wikipedia.org/wiki/Extremely_Inappropriate!",
+            "notes": "A 3 part series. In the red-light district of 1980s Taipei, women at a popular Japanese nightclub navigate jealousy, heartbreak, friendship, love, and betrayal.",
+            "tags": ["Drama", "Taiwanese drama"],
+            "see": [
+                {
+                    "title": "Netflix",
+                    "url": "https://www.netflix.com/watch/81477952"
+                },
+                {
+                    "title": "Soundtrack @ Spotify",
+                    "url": "https://open.spotify.com/album/5Wo3UjxodmjHl2XK3FCkTv"
+                }
+            ]
+        },
+        {
+            "dateAdded": "2024-10-27",
+            "title": "不適切にもほどがある! Extremely Inappropriate! (2024)",
+            "url": "https://en.wikipedia.org/wiki/Extremely_Inappropriate!",
+            "notes": "Television series about a PE teacher and his friends who time travels back-and-fourth between 1986's Japan and 2024's Japan",
+            "tags": ["Drama", "Japanese Drama"],
+            "see": [
+                {
+                    "title": "Netflix",
+                    "url": "https://www.netflix.com/title/81747060"
+                },
+                {
+                    "title": "Japan Time's Review",
+                    "url": "https://www.japantimes.co.jp/culture/2024/04/05/tv-streaming/extremely-inappropriate-series/"
+                }
+            ]
+        },
+        {
             "dateAdded": "2024-10-01",
             "title": "18x2 Beyond Youthful Days (2024)",
             "url": "https://en.wikipedia.org/wiki/18%C3%972_Beyond_Youthful_Days",
