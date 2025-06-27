@@ -5,10 +5,12 @@ date:   2025-06-27 00:00:00 +0800
 tags:   ['Web Archive', 'Career']
 ---
 
-This is an article I read on CareerEmpowering.com, which no longer exist after 2019 and only available on Internet Archive's wayback machine.
-This is a reproduction of the article, just in case the link on Internet Archive goes down.
-* Original URL: http://www.careerempowering.com/interview-power/negotiating-the-best-salary.html
-* Wayback Machine URL: https://web.archive.org/web/20190309123514/http:/www.careerempowering.com/interview-power/negotiating-the-best-salary.html
+This is an article I read on CareerEmpowering.com, which no longer exist after 2019 and is only available on Internet Archive's wayback machine. This is a reproduction of the article, in case the copy on Internet Archive went down for any reason.
+
+* Article URL on original website: http://www.careerempowering.com/interview-power/negotiating-the-best-salary.html
+* Article URL on Wayback Machine URL: https://web.archive.org/web/20190309123514/http:/www.careerempowering.com/interview-power/negotiating-the-best-salary.html
+* The original book: https://www.amazon.com/Interview-Power-Selling-Yourself-Face/dp/0931213177
+* Original book's URL on Wayback Machine: https://web.archive.org/web/20190321193453/http://www.careerempowering.com/interview-power/table-of-contents-for-interview-power.html
 
 ---
 
@@ -395,3 +397,5 @@ Interviews are a very important part of employer research. During most interview
 Interviewing is a continuation of your research. Keep your detective cap on and discover all you can. Ask yourself if you would enjoy working for this person. Will you respect this boss? Do your management philosophies match? Will you like each other? These are some of the important questions that can be answered, in part, by the research you conduct during interviews. 
  
 Do some research before each interview, even if it’s the third or fourth interview with the same company. This is particularly important if you feel really good about the job, your potential boss, and the company. Discover all you can. Answering questions effectively and asking the right questions could make the difference between being the number-one choice and the number-two choice.
+
+Copyright 2004, Tom Washington. Not for commercial use without prior approval.
