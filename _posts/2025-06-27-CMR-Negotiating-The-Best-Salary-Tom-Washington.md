@@ -54,65 +54,36 @@ Create a checklist to help determine how close a particular job is to what you w
  
 The following items are ones you might want on your list when defining the type of organization you want to work for: 
  
-Good salary 
- 
-Benefits 
- 
-Act on employee suggestions 
- 
-Flexible 
- 
-Innovative 
- 
-Potential for advancement 
- 
-High ethics and integrity 
- 
-Pleasant physical environment 
- 
-My own office 
- 
-Minimal office politics 
- 
-Pleasant place to work 
- 
-Casual dress 
- 
-Tuition reimbursement 
- 
-Good opportunities for training 
- 
-Excellent reputation in the industry 
- 
-Relocation unlikely 
- 
-Low turnover 
- 
-Profitable company 
- 
-Rarely have layoffs 
- 
-Promotes from within 
- 
-Facing challenges I’d like to be involved in 
- 
-Short commute 
- 
-Hours are reasonable, small amount of overtime 
- 
-Well-managed organization 
- 
-Top management is stable 
- 
-Organization is doing interesting, valuable work 
- 
-Team emphasis but also work independently 
- 
-Organization has strong sense of direction 
- 
-Management is open with staff 
- 
-Management encourages new ideas 
+* Good salary 
+* Benefits 
+* Act on employee suggestions 
+* Flexible 
+* Innovative 
+* Potential for advancement 
+* High ethics and integrity 
+* Pleasant physical environment 
+* My own office 
+* Minimal office politics 
+* Pleasant place to work 
+* Casual dress 
+* Tuition reimbursement 
+* Good opportunities for training 
+* Excellent reputation in the industry 
+* Relocation unlikely 
+* Low turnover 
+* Profitable company 
+* Rarely have layoffs 
+* Promotes from within 
+* Facing challenges I’d like to be involved in 
+* Short commute 
+* Hours are reasonable, small amount of overtime 
+* Well-managed organization 
+* Top management is stable 
+* Organization is doing interesting, valuable work 
+* Team emphasis but also work independently 
+* Organization has strong sense of direction 
+* Management is open with staff 
+* Management encourages new ideas 
  
 The list is intended to help you get started. Borrow items, but also come up with points that are important to you. 
  
