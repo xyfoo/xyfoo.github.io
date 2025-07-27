@@ -19,3 +19,12 @@ Bunch of links related to electric vehicles
 ## General
 
 * [US EPA - Electric Vehicle Myths](https://www.epa.gov/greenvehicles/electric-vehicle-myths)
+
+## Others
+
+* [2025] Sixth Tone - Five-part series exploring China’s electric vehicle boom — and the people building, driving, and fixing its future.
+  * [Part 1 - The Foot Soldiers Steering China’s EV Ambitions Abroad](https://www.sixthtone.com/news/1016511)
+  * [Part 2 - The Motor Cities Behind China’s EV Empire](https://www.sixthtone.com/news/1016518)
+  * [Part 3 - The Chinese City Betting Everything on Tiny Cars](https://www.sixthtone.com/news/1016519)
+  * [Part 4 - China’s EVs Are Smart, Green, and Cheap — Until They Aren’t](https://www.sixthtone.com/news/1016520)
+  * [Part 5 - The Missing Link in China’s EV Boom: Who Will Fix Them?](https://www.sixthtone.com/news/1016521)
